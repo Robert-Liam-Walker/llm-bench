@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>llm-bench — Claude tier comparison across 12 tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>llm-bench</h1>
+    <p class="tagline">
+      Per-task accuracy and cost across Claude Opus&nbsp;4.7, Sonnet&nbsp;4.6, and Haiku&nbsp;4.5.
+      Half the tasks are deterministically scored (unit tests, SQL execution, regex match, exact answer);
+      the rest use a disclosed LLM-as-judge rubric (Opus grades, on a 0–1 scale).
+    </p>
+    <p class="meta" id="run-meta">Loading…</p>
+  </header>
+
+  <main>
+    <section class="grid-section">
+      <table id="grid"></table>
+      <p class="caption">
+        Click any cell to inspect the per-prompt scores, the raw model response, and (for judge-scored
+        tasks) the judge's reasoning.
+        Color: <span class="legend low">0.0</span>
+        <span class="legend mid">0.5</span>
+        <span class="legend high">1.0</span>
+      </p>
+    </section>
+
+    <section id="drill" class="drill hidden">
+      <button class="close" id="drill-close">✕</button>
+      <h2 id="drill-title"></h2>
+      <div id="drill-body"></div>
+    </section>
+
+    <section class="methodology">
+      <h2>Methodology, briefly</h2>
+      <ul>
+        <li><strong>code_gen</strong> · model writes a Python function; runner exec's it and runs unit tests · <em>deterministic</em></li>
+        <li><strong>code_debug</strong> · diagnose + fix buggy code · <em>judged</em> on rubric</li>
+        <li><strong>code_refactor</strong> · improve working code without changing behavior · <em>judged</em> on rubric</li>
+        <li><strong>sql</strong> · query against a SQLite fixture; result rows compared · <em>deterministic</em></li>
+        <li><strong>regex</strong> · pattern applied to held-out match/non-match examples · <em>deterministic</em></li>
+        <li><strong>json_extract</strong> · jsonschema validation + key field checks · <em>deterministic</em></li>
+        <li><strong>math</strong> · word problem; final-number exact match (1‰ tolerance) · <em>deterministic</em></li>
+        <li><strong>science</strong> · multi-step factual reasoning · <em>judged</em></li>
+        <li><strong>summarize</strong> · short/medium/long article → summary · <em>judged</em></li>
+        <li><strong>email</strong> · workplace email from scenario · <em>judged</em> on tone + completeness</li>
+        <li><strong>logic</strong> · puzzle with one correct answer · <em>deterministic</em></li>
+        <li><strong>edge_cases</strong> · should hedge / refuse / identify trick · <em>judged</em></li>
+      </ul>
+      <p>
+        <strong>Caveat the judge:</strong> when Opus grades Opus's own outputs, that row is self-judging.
+        Take the Opus column on judged tasks with proportional salt.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Source: <a href="https://github.com/Robert-Liam-Walker/llm-bench">github.com/Robert-Liam-Walker/llm-bench</a>
+      · <a href="results/latest.json">raw results JSON</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
