@@ -64,11 +64,23 @@ Half the categories are deterministic (no judge), which makes the leaderboard cr
 
 ## Production
 
-- **URL:** TBD (EC2 t3.micro)
-- **SSH:** `ssh -i ~/.ssh/llm-bench-key.pem ubuntu@<ip>`
-- **Cron:** runs full suite weekly (cost: ~$1/run × 4 = $4/mo at current pricing)
-- **Web:** nginx serves `dashboard/` and `results/latest.json` as static files
-- **Secrets:** `ANTHROPIC_API_KEY` in `/etc/llm-bench.env`, loaded by systemd
+- **URL:** http://44.195.85.130/
+- **EC2:** `i-007bf70075b46a095`, t3.micro, us-east-1, account `056195341948`. Name tag `llm-bench`, SG `llm-bench-sg` (22 + 80), key pair `llm-bench-key`.
+- **SSH:** `ssh -i ~/.ssh/llm-bench-key.pem ubuntu@44.195.85.130`
+- **Web:** nginx serves `/home/ubuntu/llm-bench/dashboard/` at port 80; `results/latest.json` is reachable at `/results/latest.json`. `/home/ubuntu` was chmod'd `o+x` to make traversal work for nginx (default 700 blocks www-data).
+- **Schedule:** systemd timer `llm-bench-eval.timer` runs the suite every Sunday at 10:00 UTC. Service unit `llm-bench-eval.service` execs `.venv/bin/python -m bench`.
+- **Secrets:** `/etc/llm-bench.env` (mode 600, root-owned) holds `ANTHROPIC_API_KEY=…`. systemd unit pulls it via `EnvironmentFile`. **The first deploy left this stubbed empty** — fill it before the next scheduled run, or `sudo systemctl start llm-bench-eval` manually after adding the key.
+
+### Run a real eval immediately
+
+```bash
+ssh -i ~/.ssh/llm-bench-key.pem ubuntu@44.195.85.130
+sudo nano /etc/llm-bench.env       # paste ANTHROPIC_API_KEY=sk-ant-...
+sudo systemctl start llm-bench-eval
+journalctl -u llm-bench-eval -f    # watch progress
+```
+
+Cost per full run at current Anthropic pricing: roughly $1–3 (108 prompts × 3 models, judge calls included).
 
 ## Gotchas (carry over from panini deployment)
 

@@ -2,7 +2,7 @@
 
 Reproducible benchmark of Claude model tiers across 12 task categories — code generation, debugging, SQL, regex, math, summarization, and more. Half the tasks are deterministically scored (unit tests, regex match, exact comparison); the rest use a disclosed LLM-as-judge rubric.
 
-**Live dashboard:** _coming soon_
+**Live dashboard:** http://44.195.85.130/
 
 ## What it answers
 
