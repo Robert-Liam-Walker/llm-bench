@@ -4,10 +4,10 @@ Empirical benchmark of Claude model tiers (Opus 4.7, Sonnet 4.6, Haiku 4.5) acro
 
 ## What this is (and isn't)
 
-- **Is:** a reproducible eval harness + a static dashboard showing how each Claude tier performs on each task type, with per-task scoring methodology you can drill into.
+- **Is:** a reproducible eval harness + a static dashboard showing how 6 LLMs (3 Claude tiers + 3 Groq-hosted open-weight models) perform on each task type, with per-task scoring methodology you can drill into.
 - **Isn't:** a chatbot, a wrapper, or "AI that does X." The LLM is the *subject* of measurement, not the engine.
 
-The point: when does Opus pay off vs Haiku (10× cheaper)? Nobody publishes good per-task answers; this does.
+The point: when does Opus pay off vs Haiku (10× cheaper)? When does a free open-weight model close the gap? Nobody publishes good per-task answers; this does.
 
 ## Layout
 
@@ -69,18 +69,18 @@ Half the categories are deterministic (no judge), which makes the leaderboard cr
 - **SSH:** `ssh -i ~/.ssh/llm-bench-key.pem ubuntu@44.195.85.130`
 - **Web:** nginx serves `/home/ubuntu/llm-bench/dashboard/` at port 80; `results/latest.json` is reachable at `/results/latest.json`. `/home/ubuntu` was chmod'd `o+x` to make traversal work for nginx (default 700 blocks www-data).
 - **Schedule:** systemd timer `llm-bench-eval.timer` runs the suite every Sunday at 10:00 UTC. Service unit `llm-bench-eval.service` execs `.venv/bin/python -m bench`.
-- **Secrets:** `/etc/llm-bench.env` (mode 600, root-owned) holds `ANTHROPIC_API_KEY=…`. systemd unit pulls it via `EnvironmentFile`. **The first deploy left this stubbed empty** — fill it before the next scheduled run, or `sudo systemctl start llm-bench-eval` manually after adding the key.
+- **Secrets:** `/etc/llm-bench.env` (mode 600, root-owned) holds `ANTHROPIC_API_KEY=…` and `GROQ_API_KEY=…`. systemd unit pulls both via `EnvironmentFile`. Either can be missing — runner skips that provider's models with a log line, rest of suite still runs.
 
 ### Run a real eval immediately
 
 ```bash
 ssh -i ~/.ssh/llm-bench-key.pem ubuntu@44.195.85.130
-sudo nano /etc/llm-bench.env       # paste ANTHROPIC_API_KEY=sk-ant-...
+sudo nano /etc/llm-bench.env       # paste ANTHROPIC_API_KEY=sk-ant-... and/or GROQ_API_KEY=gsk_...
 sudo systemctl start llm-bench-eval
 journalctl -u llm-bench-eval -f    # watch progress
 ```
 
-Cost per full run at current Anthropic pricing: roughly $1–3 (108 prompts × 3 models, judge calls included).
+Cost per full run: ~$1–3 for the three Anthropic models. Groq models are on the free tier ($0). Free tier is rate-limited (around 30 req/min) — full Groq sweep takes ~5 min just from rate-limiting.
 
 ## Gotchas (carry over from panini deployment)
 

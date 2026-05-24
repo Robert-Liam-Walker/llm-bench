@@ -6,11 +6,11 @@ Reproducible benchmark of Claude model tiers across 12 task categories — code 
 
 ## What it answers
 
-When does Claude Opus pay off versus Sonnet or Haiku (10× cheaper)? The dashboard shows per-task accuracy and per-task cost, so you can see where the cheap model is good enough and where it isn't.
+When does Claude Opus pay off versus Sonnet or Haiku (10× cheaper)? When can a free open-weight model (Llama 3.3 70B, DeepSeek R1) hold its own against the frontier? The dashboard shows per-task accuracy and per-task cost, so you can see where the cheap or free model is good enough and where it isn't.
 
 ## Methodology
 
-- **Models:** Claude Opus 4.7, Sonnet 4.6, Haiku 4.5 (one provider, three tiers).
+- **Models:** Claude Opus 4.7, Sonnet 4.6, Haiku 4.5 (Anthropic, paid) + Llama 3.3 70B, DeepSeek R1 distill, Llama 3.1 8B (Groq, free tier — open weights).
 - **Tasks:** 12 categories × 3 prompts each, scoring 0.0–1.0 per response.
 - **Deterministic scoring** where possible (6 of 12 categories): unit tests, SQL execution, regex application, exact match.
 - **LLM-as-judge** for subjective categories (6 of 12): Opus grades against a published rubric. Yes, that's circular for Opus's own rows — flagged in the UI.

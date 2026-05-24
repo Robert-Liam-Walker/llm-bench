@@ -10,7 +10,8 @@
   <header>
     <h1>llm-bench</h1>
     <p class="tagline">
-      Per-task accuracy and cost across Claude Opus&nbsp;4.7, Sonnet&nbsp;4.6, and Haiku&nbsp;4.5.
+      Per-task accuracy and cost across three Claude tiers (Opus&nbsp;4.7, Sonnet&nbsp;4.6, Haiku&nbsp;4.5)
+      and three open-weight models served by Groq (Llama&nbsp;3.3&nbsp;70B, DeepSeek&nbsp;R1 distill, Llama&nbsp;3.1&nbsp;8B).
       Half the tasks are deterministically scored (unit tests, SQL execution, regex match, exact answer);
       the rest use a disclosed LLM-as-judge rubric (Opus grades, on a 0–1 scale).
     </p>
@@ -52,8 +53,9 @@
         <li><strong>edge_cases</strong> · should hedge / refuse / identify trick · <em>judged</em></li>
       </ul>
       <p>
-        <strong>Caveat the judge:</strong> when Opus grades Opus's own outputs, that row is self-judging.
-        Take the Opus column on judged tasks with proportional salt.
+        <strong>Caveat the judge:</strong> when Opus grades Opus's own outputs, that row is self-judging
+        on the six judge-scored tasks. The deterministic tasks (the other six) are unaffected,
+        and the Groq models are judged by an independent family.
       </p>
     </section>
   </main>
