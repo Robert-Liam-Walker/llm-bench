@@ -80,8 +80,8 @@ def main():
     out = {
         "version": 1,
         "placeholder": True,
-        "started_at": datetime.datetime.now(datetime.UTC).isoformat() + "Z",
-        "finished_at": datetime.datetime.now(datetime.UTC).isoformat() + "Z",
+        "started_at": datetime.datetime.now(datetime.timezone.utc).isoformat() + "Z",
+        "finished_at": datetime.datetime.now(datetime.timezone.utc).isoformat() + "Z",
         "dry_run": False,
         "models": MODELS,
         "tasks": [

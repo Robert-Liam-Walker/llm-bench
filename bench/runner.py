@@ -35,7 +35,7 @@ def run(
     models = [m for m in MODELS if (model_filter is None or m["id"] in model_filter)]
     tasks = [t for t in ALL_TASKS if (task_filter is None or t.category in task_filter)]
 
-    started = datetime.datetime.now(datetime.UTC).isoformat() + "Z"
+    started = datetime.datetime.now(datetime.timezone.utc).isoformat() + "Z"
     cells: dict[str, dict[str, list[dict]]] = {}
 
     total = len(tasks) * sum(len(t.prompts) for t in tasks) * len(models) // max(len(tasks), 1)
@@ -69,7 +69,7 @@ def run(
                 "total_output_tokens": sum(p.get("output_tokens", 0) for p in per_prompt),
             }
 
-    finished = datetime.datetime.now(datetime.UTC).isoformat() + "Z"
+    finished = datetime.datetime.now(datetime.timezone.utc).isoformat() + "Z"
 
     out = {
         "version": 1,
@@ -109,7 +109,7 @@ def _mean(values: list[float]) -> float:
 def _write_results(out: dict, out_dir: str):
     path = Path(out_dir)
     path.mkdir(parents=True, exist_ok=True)
-    ts = datetime.datetime.now(datetime.UTC).strftime("%Y%m%dT%H%M%SZ")
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     fname = path / f"{ts}.json"
     fname.write_text(json.dumps(out, indent=2))
     latest = path / "latest.json"
