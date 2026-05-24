@@ -1,5 +1,6 @@
-"""Write a placeholder results/latest.json so the dashboard has something to render
-before the real eval has been run. Plausible numbers, clearly marked.
+"""Write placeholder results/*.json so the dashboard renders the grid + drift + trend
+views before any real run has happened. Each historical placeholder file is clearly
+flagged with `placeholder: true`.
 
 Usage:  python scripts/seed_placeholder.py
 """
@@ -13,12 +14,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from bench import MODELS
+from bench.index import update_index
 from bench.tasks import ALL_TASKS
 
-random.seed(42)
-
-# Plausible per-model baselines. Reflects rough public benchmark intuitions:
-# Opus > Sonnet > Llama 70B ≈ DeepSeek R1 ≳ Haiku > Llama 8B.
+# Plausible per-model baselines. Roughly: Opus > Sonnet > DeepSeek ≈ Llama 70B > Haiku > Llama 8B.
 TIER_BASELINE = {
     "claude-opus-4-7":                {"mean": 0.86, "stddev": 0.10},
     "claude-sonnet-4-6":              {"mean": 0.80, "stddev": 0.12},
@@ -39,29 +38,38 @@ TOK = {
     "long":   {"in": (520, 780),  "out": (740, 1200)},
 }
 
+# Months to seed (UTC, 1st of each).
+SEED_MONTHS = [
+    datetime.datetime(2026, 2, 1, 10, 0, tzinfo=datetime.timezone.utc),
+    datetime.datetime(2026, 3, 1, 10, 0, tzinfo=datetime.timezone.utc),
+    datetime.datetime(2026, 4, 1, 10, 0, tzinfo=datetime.timezone.utc),
+    datetime.datetime(2026, 5, 1, 10, 0, tzinfo=datetime.timezone.utc),
+]
 
-def gen_score(model_id: str, task_category: str) -> float:
+
+def gen_score(rng: random.Random, model_id: str, task_category: str) -> float:
     base = TIER_BASELINE[model_id]
     penalty = 0.15 if (model_id in SMALL_MODELS and task_category in HARD_FOR_SMALL) else 0.0
     bonus = 0.08 if (model_id in REASONING_MODELS and task_category in REASONING_BONUS) else 0.0
-    score = random.gauss(base["mean"] - penalty + bonus, base["stddev"])
+    score = rng.gauss(base["mean"] - penalty + bonus, base["stddev"])
     return round(max(0.0, min(1.0, score)), 2)
 
 
-def gen_tokens(length: str) -> tuple[int, int]:
+def gen_tokens(rng: random.Random, length: str) -> tuple[int, int]:
     bucket = TOK[length]
-    return random.randint(*bucket["in"]), random.randint(*bucket["out"])
+    return rng.randint(*bucket["in"]), rng.randint(*bucket["out"])
 
 
-def main():
+def build_run(when: datetime.datetime) -> dict:
+    rng = random.Random(int(when.timestamp()))
     cells = {}
     for task in ALL_TASKS:
         cells[task.category] = {}
         for model in MODELS:
             per_prompt = []
             for p in task.prompts:
-                score = gen_score(model["id"], task.category)
-                in_tok, out_tok = gen_tokens(p.length_bucket)
+                score = gen_score(rng, model["id"], task.category)
+                in_tok, out_tok = gen_tokens(rng, p.length_bucket)
                 per_prompt.append({
                     "prompt_id": p.id,
                     "length": p.length_bucket,
@@ -77,13 +85,12 @@ def main():
                 "total_input_tokens": sum(p["input_tokens"] for p in per_prompt),
                 "total_output_tokens": sum(p["output_tokens"] for p in per_prompt),
             }
-
-    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    out = {
+    iso = when.isoformat()
+    return {
         "version": 1,
         "placeholder": True,
-        "started_at": now,
-        "finished_at": now,
+        "started_at": iso,
+        "finished_at": iso,
         "dry_run": False,
         "skipped_providers": [],
         "models": MODELS,
@@ -94,15 +101,37 @@ def main():
         "cells": cells,
     }
 
+
+def main():
     out_dir = Path("results")
     out_dir.mkdir(exist_ok=True)
-    target = out_dir / "placeholder.json"
-    target.write_text(json.dumps(out, indent=2))
+
+    # Remove any previous placeholder files (anything matching the seed months) + index
+    for f in out_dir.glob("*.json"):
+        if f.name == "index.json":
+            f.unlink()
+            continue
+        try:
+            data = json.loads(f.read_text())
+            if data.get("placeholder"):
+                f.unlink()
+        except Exception:
+            pass
+
+    last_file = None
+    for when in SEED_MONTHS:
+        run = build_run(when)
+        ts = when.strftime("%Y%m%dT%H%M%SZ")
+        fname = out_dir / f"{ts}.json"
+        fname.write_text(json.dumps(run, indent=2))
+        update_index(out_dir, run)
+        last_file = fname
+
     latest = out_dir / "latest.json"
     if latest.exists() or latest.is_symlink():
         latest.unlink()
-    os.symlink("placeholder.json", latest)
-    print(f"wrote {target} and latest.json -> placeholder.json")
+    os.symlink(last_file.name, latest)
+    print(f"wrote {len(SEED_MONTHS)} placeholder runs, index.json, latest -> {last_file.name}")
 
 
 if __name__ == "__main__":

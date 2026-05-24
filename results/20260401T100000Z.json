@@ -1,8 +1,8 @@
 {
   "version": 1,
   "placeholder": true,
-  "started_at": "2026-05-24T04:26:37.078402+00:00",
-  "finished_at": "2026-05-24T04:26:37.078402+00:00",
+  "started_at": "2026-04-01T10:00:00+00:00",
+  "finished_at": "2026-04-01T10:00:00+00:00",
   "dry_run": false,
   "skipped_providers": [],
   "models": [
@@ -118,85 +118,119 @@
           {
             "prompt_id": "palindrome",
             "length": "short",
-            "score": 0.85,
-            "input_tokens": 197,
-            "output_tokens": 282,
+            "score": 0.94,
+            "input_tokens": 210,
+            "output_tokens": 374,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "flatten",
             "length": "medium",
-            "score": 0.84,
-            "input_tokens": 377,
-            "output_tokens": 491,
+            "score": 0.98,
+            "input_tokens": 412,
+            "output_tokens": 490,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "merge_intervals",
             "length": "long",
-            "score": 0.85,
-            "input_tokens": 564,
-            "output_tokens": 1042,
+            "score": 0.73,
+            "input_tokens": 664,
+            "output_tokens": 786,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.847,
-        "total_input_tokens": 1138,
-        "total_output_tokens": 1815
+        "mean_score": 0.883,
+        "total_input_tokens": 1286,
+        "total_output_tokens": 1650
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "palindrome",
             "length": "short",
-            "score": 0.62,
-            "input_tokens": 207,
-            "output_tokens": 228,
+            "score": 0.81,
+            "input_tokens": 182,
+            "output_tokens": 236,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "flatten",
             "length": "medium",
-            "score": 0.88,
-            "input_tokens": 449,
-            "output_tokens": 433,
+            "score": 0.82,
+            "input_tokens": 470,
+            "output_tokens": 436,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "merge_intervals",
             "length": "long",
-            "score": 0.82,
-            "input_tokens": 621,
-            "output_tokens": 1106,
+            "score": 0.76,
+            "input_tokens": 668,
+            "output_tokens": 907,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.773,
-        "total_input_tokens": 1277,
-        "total_output_tokens": 1767
+        "mean_score": 0.797,
+        "total_input_tokens": 1320,
+        "total_output_tokens": 1579
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "palindrome",
             "length": "short",
-            "score": 0.53,
-            "input_tokens": 194,
-            "output_tokens": 334,
+            "score": 0.59,
+            "input_tokens": 214,
+            "output_tokens": 361,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "flatten",
             "length": "medium",
-            "score": 0.48,
-            "input_tokens": 470,
+            "score": 0.62,
+            "input_tokens": 344,
+            "output_tokens": 567,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "merge_intervals",
+            "length": "long",
+            "score": 0.44,
+            "input_tokens": 527,
+            "output_tokens": 1079,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.55,
+        "total_input_tokens": 1085,
+        "total_output_tokens": 2007
+      },
+      "llama-3.3-70b-versatile": {
+        "prompts": [
+          {
+            "prompt_id": "palindrome",
+            "length": "short",
+            "score": 0.86,
+            "input_tokens": 216,
+            "output_tokens": 293,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "flatten",
+            "length": "medium",
+            "score": 0.64,
+            "input_tokens": 364,
             "output_tokens": 562,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
@@ -204,118 +238,84 @@
           {
             "prompt_id": "merge_intervals",
             "length": "long",
-            "score": 0.67,
-            "input_tokens": 601,
-            "output_tokens": 1097,
+            "score": 0.85,
+            "input_tokens": 720,
+            "output_tokens": 876,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.56,
-        "total_input_tokens": 1265,
-        "total_output_tokens": 1993
-      },
-      "llama-3.3-70b-versatile": {
-        "prompts": [
-          {
-            "prompt_id": "palindrome",
-            "length": "short",
-            "score": 0.73,
-            "input_tokens": 207,
-            "output_tokens": 307,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "flatten",
-            "length": "medium",
-            "score": 0.72,
-            "input_tokens": 406,
-            "output_tokens": 472,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "merge_intervals",
-            "length": "long",
-            "score": 0.84,
-            "input_tokens": 567,
-            "output_tokens": 934,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.763,
-        "total_input_tokens": 1180,
-        "total_output_tokens": 1713
+        "mean_score": 0.783,
+        "total_input_tokens": 1300,
+        "total_output_tokens": 1731
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "palindrome",
             "length": "short",
-            "score": 1.0,
-            "input_tokens": 218,
-            "output_tokens": 287,
+            "score": 0.74,
+            "input_tokens": 230,
+            "output_tokens": 230,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "flatten",
             "length": "medium",
-            "score": 0.94,
-            "input_tokens": 331,
-            "output_tokens": 655,
+            "score": 0.58,
+            "input_tokens": 470,
+            "output_tokens": 644,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "merge_intervals",
             "length": "long",
-            "score": 0.34,
-            "input_tokens": 713,
-            "output_tokens": 780,
+            "score": 0.88,
+            "input_tokens": 776,
+            "output_tokens": 930,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.76,
-        "total_input_tokens": 1262,
-        "total_output_tokens": 1722
+        "mean_score": 0.733,
+        "total_input_tokens": 1476,
+        "total_output_tokens": 1804
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "palindrome",
             "length": "short",
-            "score": 0.4,
-            "input_tokens": 215,
-            "output_tokens": 295,
+            "score": 0.68,
+            "input_tokens": 223,
+            "output_tokens": 315,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "flatten",
             "length": "medium",
-            "score": 0.65,
-            "input_tokens": 412,
-            "output_tokens": 518,
+            "score": 0.3,
+            "input_tokens": 446,
+            "output_tokens": 646,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "merge_intervals",
             "length": "long",
-            "score": 0.28,
-            "input_tokens": 555,
-            "output_tokens": 763,
+            "score": 0.63,
+            "input_tokens": 604,
+            "output_tokens": 891,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.443,
-        "total_input_tokens": 1182,
-        "total_output_tokens": 1576
+        "mean_score": 0.537,
+        "total_input_tokens": 1273,
+        "total_output_tokens": 1852
       }
     },
     "code_debug": {
@@ -325,8 +325,110 @@
             "prompt_id": "off_by_one",
             "length": "short",
             "score": 0.77,
-            "input_tokens": 185,
-            "output_tokens": 279,
+            "input_tokens": 211,
+            "output_tokens": 377,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "mutate_during_iter",
+            "length": "medium",
+            "score": 0.93,
+            "input_tokens": 347,
+            "output_tokens": 456,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "dict_default_mutable",
+            "length": "long",
+            "score": 0.9,
+            "input_tokens": 768,
+            "output_tokens": 802,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.867,
+        "total_input_tokens": 1326,
+        "total_output_tokens": 1635
+      },
+      "claude-sonnet-4-6": {
+        "prompts": [
+          {
+            "prompt_id": "off_by_one",
+            "length": "short",
+            "score": 0.91,
+            "input_tokens": 200,
+            "output_tokens": 360,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "mutate_during_iter",
+            "length": "medium",
+            "score": 0.87,
+            "input_tokens": 472,
+            "output_tokens": 613,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "dict_default_mutable",
+            "length": "long",
+            "score": 0.66,
+            "input_tokens": 572,
+            "output_tokens": 778,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.813,
+        "total_input_tokens": 1244,
+        "total_output_tokens": 1751
+      },
+      "claude-haiku-4-5-20251001": {
+        "prompts": [
+          {
+            "prompt_id": "off_by_one",
+            "length": "short",
+            "score": 0.74,
+            "input_tokens": 199,
+            "output_tokens": 227,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "mutate_during_iter",
+            "length": "medium",
+            "score": 0.49,
+            "input_tokens": 387,
+            "output_tokens": 603,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "dict_default_mutable",
+            "length": "long",
+            "score": 0.65,
+            "input_tokens": 705,
+            "output_tokens": 836,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.627,
+        "total_input_tokens": 1291,
+        "total_output_tokens": 1666
+      },
+      "llama-3.3-70b-versatile": {
+        "prompts": [
+          {
+            "prompt_id": "off_by_one",
+            "length": "short",
+            "score": 0.63,
+            "input_tokens": 229,
+            "output_tokens": 366,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
@@ -334,194 +436,92 @@
             "prompt_id": "mutate_during_iter",
             "length": "medium",
             "score": 0.71,
-            "input_tokens": 345,
-            "output_tokens": 614,
+            "input_tokens": 460,
+            "output_tokens": 480,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "dict_default_mutable",
             "length": "long",
-            "score": 0.84,
-            "input_tokens": 706,
-            "output_tokens": 823,
+            "score": 0.65,
+            "input_tokens": 700,
+            "output_tokens": 767,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.773,
-        "total_input_tokens": 1236,
-        "total_output_tokens": 1716
-      },
-      "claude-sonnet-4-6": {
-        "prompts": [
-          {
-            "prompt_id": "off_by_one",
-            "length": "short",
-            "score": 0.97,
-            "input_tokens": 203,
-            "output_tokens": 310,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "mutate_during_iter",
-            "length": "medium",
-            "score": 0.82,
-            "input_tokens": 338,
-            "output_tokens": 507,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "dict_default_mutable",
-            "length": "long",
-            "score": 0.89,
-            "input_tokens": 645,
-            "output_tokens": 823,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.893,
-        "total_input_tokens": 1186,
-        "total_output_tokens": 1640
-      },
-      "claude-haiku-4-5-20251001": {
-        "prompts": [
-          {
-            "prompt_id": "off_by_one",
-            "length": "short",
-            "score": 0.52,
-            "input_tokens": 239,
-            "output_tokens": 362,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "mutate_during_iter",
-            "length": "medium",
-            "score": 0.69,
-            "input_tokens": 376,
-            "output_tokens": 586,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "dict_default_mutable",
-            "length": "long",
-            "score": 0.83,
-            "input_tokens": 637,
-            "output_tokens": 1160,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.68,
-        "total_input_tokens": 1252,
-        "total_output_tokens": 2108
-      },
-      "llama-3.3-70b-versatile": {
-        "prompts": [
-          {
-            "prompt_id": "off_by_one",
-            "length": "short",
-            "score": 0.54,
-            "input_tokens": 182,
-            "output_tokens": 300,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "mutate_during_iter",
-            "length": "medium",
-            "score": 0.7,
-            "input_tokens": 465,
-            "output_tokens": 581,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "dict_default_mutable",
-            "length": "long",
-            "score": 0.77,
-            "input_tokens": 628,
-            "output_tokens": 1075,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.67,
-        "total_input_tokens": 1275,
-        "total_output_tokens": 1956
+        "mean_score": 0.663,
+        "total_input_tokens": 1389,
+        "total_output_tokens": 1613
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "off_by_one",
             "length": "short",
-            "score": 0.51,
-            "input_tokens": 221,
-            "output_tokens": 337,
+            "score": 0.78,
+            "input_tokens": 190,
+            "output_tokens": 258,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "mutate_during_iter",
             "length": "medium",
-            "score": 0.84,
-            "input_tokens": 356,
-            "output_tokens": 555,
+            "score": 0.9,
+            "input_tokens": 402,
+            "output_tokens": 500,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "dict_default_mutable",
             "length": "long",
-            "score": 1.0,
-            "input_tokens": 654,
-            "output_tokens": 1122,
+            "score": 0.72,
+            "input_tokens": 667,
+            "output_tokens": 814,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.783,
-        "total_input_tokens": 1231,
-        "total_output_tokens": 2014
+        "mean_score": 0.8,
+        "total_input_tokens": 1259,
+        "total_output_tokens": 1572
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "off_by_one",
             "length": "short",
-            "score": 0.77,
-            "input_tokens": 217,
-            "output_tokens": 329,
+            "score": 0.52,
+            "input_tokens": 228,
+            "output_tokens": 350,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "mutate_during_iter",
             "length": "medium",
-            "score": 0.68,
-            "input_tokens": 376,
-            "output_tokens": 490,
+            "score": 0.87,
+            "input_tokens": 372,
+            "output_tokens": 535,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "dict_default_mutable",
             "length": "long",
-            "score": 0.4,
-            "input_tokens": 780,
-            "output_tokens": 992,
+            "score": 0.79,
+            "input_tokens": 582,
+            "output_tokens": 869,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.617,
-        "total_input_tokens": 1373,
-        "total_output_tokens": 1811
+        "mean_score": 0.727,
+        "total_input_tokens": 1182,
+        "total_output_tokens": 1754
       }
     },
     "code_refactor": {
@@ -530,204 +530,204 @@
           {
             "prompt_id": "nested_if",
             "length": "short",
-            "score": 0.89,
-            "input_tokens": 187,
-            "output_tokens": 259,
+            "score": 0.86,
+            "input_tokens": 228,
+            "output_tokens": 224,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "repeated_lookups",
             "length": "medium",
-            "score": 0.88,
-            "input_tokens": 480,
-            "output_tokens": 501,
+            "score": 0.73,
+            "input_tokens": 368,
+            "output_tokens": 573,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "god_function",
             "length": "long",
-            "score": 0.89,
-            "input_tokens": 552,
-            "output_tokens": 937,
+            "score": 0.87,
+            "input_tokens": 683,
+            "output_tokens": 1164,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.887,
-        "total_input_tokens": 1219,
-        "total_output_tokens": 1697
+        "mean_score": 0.82,
+        "total_input_tokens": 1279,
+        "total_output_tokens": 1961
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "nested_if",
             "length": "short",
-            "score": 0.68,
-            "input_tokens": 204,
-            "output_tokens": 372,
+            "score": 0.82,
+            "input_tokens": 229,
+            "output_tokens": 329,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "repeated_lookups",
             "length": "medium",
-            "score": 0.95,
-            "input_tokens": 461,
-            "output_tokens": 425,
+            "score": 1.0,
+            "input_tokens": 344,
+            "output_tokens": 592,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "god_function",
             "length": "long",
-            "score": 0.8,
-            "input_tokens": 578,
-            "output_tokens": 1089,
+            "score": 0.97,
+            "input_tokens": 729,
+            "output_tokens": 1179,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.81,
-        "total_input_tokens": 1243,
-        "total_output_tokens": 1886
+        "mean_score": 0.93,
+        "total_input_tokens": 1302,
+        "total_output_tokens": 2100
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "nested_if",
             "length": "short",
-            "score": 0.73,
-            "input_tokens": 229,
-            "output_tokens": 307,
+            "score": 0.32,
+            "input_tokens": 198,
+            "output_tokens": 250,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "repeated_lookups",
             "length": "medium",
-            "score": 0.31,
-            "input_tokens": 348,
-            "output_tokens": 570,
+            "score": 0.33,
+            "input_tokens": 440,
+            "output_tokens": 598,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "god_function",
             "length": "long",
-            "score": 0.33,
-            "input_tokens": 654,
-            "output_tokens": 996,
+            "score": 0.65,
+            "input_tokens": 595,
+            "output_tokens": 804,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.457,
-        "total_input_tokens": 1231,
-        "total_output_tokens": 1873
+        "mean_score": 0.433,
+        "total_input_tokens": 1233,
+        "total_output_tokens": 1652
       },
       "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "nested_if",
             "length": "short",
-            "score": 0.8,
-            "input_tokens": 228,
-            "output_tokens": 265,
+            "score": 0.83,
+            "input_tokens": 190,
+            "output_tokens": 355,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "repeated_lookups",
             "length": "medium",
-            "score": 0.67,
-            "input_tokens": 480,
-            "output_tokens": 572,
+            "score": 0.77,
+            "input_tokens": 409,
+            "output_tokens": 449,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "god_function",
             "length": "long",
-            "score": 0.74,
-            "input_tokens": 779,
-            "output_tokens": 1051,
+            "score": 0.79,
+            "input_tokens": 768,
+            "output_tokens": 1155,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.737,
-        "total_input_tokens": 1487,
-        "total_output_tokens": 1888
+        "mean_score": 0.797,
+        "total_input_tokens": 1367,
+        "total_output_tokens": 1959
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "nested_if",
             "length": "short",
-            "score": 0.81,
-            "input_tokens": 190,
-            "output_tokens": 358,
+            "score": 0.67,
+            "input_tokens": 180,
+            "output_tokens": 243,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "repeated_lookups",
             "length": "medium",
-            "score": 0.91,
-            "input_tokens": 455,
-            "output_tokens": 420,
+            "score": 0.75,
+            "input_tokens": 454,
+            "output_tokens": 560,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "god_function",
             "length": "long",
-            "score": 0.61,
-            "input_tokens": 577,
-            "output_tokens": 925,
+            "score": 0.78,
+            "input_tokens": 686,
+            "output_tokens": 889,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.777,
-        "total_input_tokens": 1222,
-        "total_output_tokens": 1703
+        "mean_score": 0.733,
+        "total_input_tokens": 1320,
+        "total_output_tokens": 1692
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "nested_if",
             "length": "short",
-            "score": 0.24,
-            "input_tokens": 236,
-            "output_tokens": 298,
+            "score": 0.0,
+            "input_tokens": 239,
+            "output_tokens": 297,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "repeated_lookups",
             "length": "medium",
-            "score": 0.38,
-            "input_tokens": 465,
-            "output_tokens": 460,
+            "score": 0.84,
+            "input_tokens": 426,
+            "output_tokens": 533,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "god_function",
             "length": "long",
-            "score": 0.52,
-            "input_tokens": 563,
-            "output_tokens": 1114,
+            "score": 0.25,
+            "input_tokens": 699,
+            "output_tokens": 787,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.38,
-        "total_input_tokens": 1264,
-        "total_output_tokens": 1872
+        "mean_score": 0.363,
+        "total_input_tokens": 1364,
+        "total_output_tokens": 1617
       }
     },
     "sql": {
@@ -736,204 +736,204 @@
           {
             "prompt_id": "count_us_customers",
             "length": "short",
-            "score": 0.82,
-            "input_tokens": 228,
-            "output_tokens": 356,
+            "score": 1.0,
+            "input_tokens": 218,
+            "output_tokens": 349,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "top_spender",
             "length": "medium",
-            "score": 0.86,
-            "input_tokens": 352,
-            "output_tokens": 485,
+            "score": 0.92,
+            "input_tokens": 340,
+            "output_tokens": 534,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "monthly_revenue_by_country",
             "length": "long",
-            "score": 0.73,
-            "input_tokens": 604,
-            "output_tokens": 875,
+            "score": 1.0,
+            "input_tokens": 651,
+            "output_tokens": 1051,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.803,
-        "total_input_tokens": 1184,
-        "total_output_tokens": 1716
+        "mean_score": 0.973,
+        "total_input_tokens": 1209,
+        "total_output_tokens": 1934
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "count_us_customers",
             "length": "short",
-            "score": 0.55,
-            "input_tokens": 213,
-            "output_tokens": 375,
+            "score": 0.61,
+            "input_tokens": 200,
+            "output_tokens": 313,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "top_spender",
             "length": "medium",
-            "score": 0.73,
-            "input_tokens": 458,
-            "output_tokens": 522,
+            "score": 0.99,
+            "input_tokens": 389,
+            "output_tokens": 497,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "monthly_revenue_by_country",
             "length": "long",
-            "score": 0.84,
-            "input_tokens": 679,
-            "output_tokens": 944,
+            "score": 0.69,
+            "input_tokens": 771,
+            "output_tokens": 951,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.707,
-        "total_input_tokens": 1350,
-        "total_output_tokens": 1841
+        "mean_score": 0.763,
+        "total_input_tokens": 1360,
+        "total_output_tokens": 1761
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "count_us_customers",
             "length": "short",
-            "score": 0.92,
-            "input_tokens": 208,
-            "output_tokens": 352,
+            "score": 0.9,
+            "input_tokens": 189,
+            "output_tokens": 292,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "top_spender",
             "length": "medium",
-            "score": 0.65,
-            "input_tokens": 435,
-            "output_tokens": 481,
+            "score": 0.82,
+            "input_tokens": 334,
+            "output_tokens": 470,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "monthly_revenue_by_country",
             "length": "long",
-            "score": 0.66,
-            "input_tokens": 530,
-            "output_tokens": 1041,
+            "score": 0.54,
+            "input_tokens": 723,
+            "output_tokens": 915,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.743,
-        "total_input_tokens": 1173,
-        "total_output_tokens": 1874
+        "mean_score": 0.753,
+        "total_input_tokens": 1246,
+        "total_output_tokens": 1677
       },
       "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "count_us_customers",
             "length": "short",
-            "score": 0.79,
-            "input_tokens": 215,
-            "output_tokens": 278,
+            "score": 0.86,
+            "input_tokens": 232,
+            "output_tokens": 285,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "top_spender",
             "length": "medium",
-            "score": 0.73,
-            "input_tokens": 335,
-            "output_tokens": 537,
+            "score": 0.53,
+            "input_tokens": 414,
+            "output_tokens": 539,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "monthly_revenue_by_country",
             "length": "long",
-            "score": 0.73,
-            "input_tokens": 554,
-            "output_tokens": 756,
+            "score": 0.69,
+            "input_tokens": 619,
+            "output_tokens": 853,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.75,
-        "total_input_tokens": 1104,
-        "total_output_tokens": 1571
+        "mean_score": 0.693,
+        "total_input_tokens": 1265,
+        "total_output_tokens": 1677
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "count_us_customers",
             "length": "short",
-            "score": 0.8,
-            "input_tokens": 195,
-            "output_tokens": 291,
+            "score": 0.87,
+            "input_tokens": 214,
+            "output_tokens": 240,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "top_spender",
             "length": "medium",
-            "score": 0.71,
-            "input_tokens": 444,
-            "output_tokens": 529,
+            "score": 0.68,
+            "input_tokens": 455,
+            "output_tokens": 513,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "monthly_revenue_by_country",
             "length": "long",
-            "score": 0.51,
-            "input_tokens": 762,
-            "output_tokens": 864,
+            "score": 0.85,
+            "input_tokens": 776,
+            "output_tokens": 980,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.673,
-        "total_input_tokens": 1401,
-        "total_output_tokens": 1684
+        "mean_score": 0.8,
+        "total_input_tokens": 1445,
+        "total_output_tokens": 1733
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "count_us_customers",
             "length": "short",
-            "score": 0.44,
-            "input_tokens": 230,
-            "output_tokens": 341,
+            "score": 0.36,
+            "input_tokens": 231,
+            "output_tokens": 302,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "top_spender",
             "length": "medium",
-            "score": 0.57,
-            "input_tokens": 344,
-            "output_tokens": 640,
+            "score": 0.48,
+            "input_tokens": 402,
+            "output_tokens": 642,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "monthly_revenue_by_country",
             "length": "long",
-            "score": 0.4,
-            "input_tokens": 701,
-            "output_tokens": 956,
+            "score": 0.25,
+            "input_tokens": 615,
+            "output_tokens": 998,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.47,
-        "total_input_tokens": 1275,
-        "total_output_tokens": 1937
+        "mean_score": 0.363,
+        "total_input_tokens": 1248,
+        "total_output_tokens": 1942
       }
     },
     "regex": {
@@ -942,154 +942,18 @@
           {
             "prompt_id": "us_zip",
             "length": "short",
-            "score": 0.69,
-            "input_tokens": 183,
-            "output_tokens": 245,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "iso_date",
-            "length": "medium",
-            "score": 0.97,
-            "input_tokens": 335,
-            "output_tokens": 626,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "semver",
-            "length": "long",
-            "score": 0.84,
-            "input_tokens": 575,
-            "output_tokens": 867,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.833,
-        "total_input_tokens": 1093,
-        "total_output_tokens": 1738
-      },
-      "claude-sonnet-4-6": {
-        "prompts": [
-          {
-            "prompt_id": "us_zip",
-            "length": "short",
-            "score": 0.59,
-            "input_tokens": 192,
-            "output_tokens": 268,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "iso_date",
-            "length": "medium",
-            "score": 0.74,
-            "input_tokens": 366,
-            "output_tokens": 562,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "semver",
-            "length": "long",
             "score": 0.79,
-            "input_tokens": 756,
-            "output_tokens": 867,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.707,
-        "total_input_tokens": 1314,
-        "total_output_tokens": 1697
-      },
-      "claude-haiku-4-5-20251001": {
-        "prompts": [
-          {
-            "prompt_id": "us_zip",
-            "length": "short",
-            "score": 0.71,
-            "input_tokens": 231,
-            "output_tokens": 360,
+            "input_tokens": 216,
+            "output_tokens": 278,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "iso_date",
             "length": "medium",
-            "score": 0.61,
-            "input_tokens": 345,
-            "output_tokens": 445,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "semver",
-            "length": "long",
-            "score": 0.53,
-            "input_tokens": 527,
-            "output_tokens": 787,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.617,
-        "total_input_tokens": 1103,
-        "total_output_tokens": 1592
-      },
-      "llama-3.3-70b-versatile": {
-        "prompts": [
-          {
-            "prompt_id": "us_zip",
-            "length": "short",
-            "score": 0.6,
-            "input_tokens": 239,
-            "output_tokens": 280,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "iso_date",
-            "length": "medium",
-            "score": 0.82,
-            "input_tokens": 374,
-            "output_tokens": 625,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "semver",
-            "length": "long",
-            "score": 0.88,
-            "input_tokens": 550,
-            "output_tokens": 824,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.767,
-        "total_input_tokens": 1163,
-        "total_output_tokens": 1729
-      },
-      "deepseek-r1-distill-llama-70b": {
-        "prompts": [
-          {
-            "prompt_id": "us_zip",
-            "length": "short",
-            "score": 0.42,
-            "input_tokens": 196,
-            "output_tokens": 336,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "iso_date",
-            "length": "medium",
-            "score": 1.0,
-            "input_tokens": 393,
-            "output_tokens": 636,
+            "score": 0.84,
+            "input_tokens": 464,
+            "output_tokens": 475,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
@@ -1097,49 +961,185 @@
             "prompt_id": "semver",
             "length": "long",
             "score": 0.67,
-            "input_tokens": 769,
-            "output_tokens": 819,
+            "input_tokens": 548,
+            "output_tokens": 801,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.697,
-        "total_input_tokens": 1358,
-        "total_output_tokens": 1791
+        "mean_score": 0.767,
+        "total_input_tokens": 1228,
+        "total_output_tokens": 1554
       },
-      "llama-3.1-8b-instant": {
+      "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "us_zip",
             "length": "short",
-            "score": 0.21,
-            "input_tokens": 192,
-            "output_tokens": 295,
+            "score": 1.0,
+            "input_tokens": 214,
+            "output_tokens": 323,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "iso_date",
             "length": "medium",
-            "score": 0.53,
-            "input_tokens": 458,
-            "output_tokens": 451,
+            "score": 0.64,
+            "input_tokens": 334,
+            "output_tokens": 542,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "semver",
             "length": "long",
-            "score": 0.59,
-            "input_tokens": 680,
-            "output_tokens": 769,
+            "score": 0.83,
+            "input_tokens": 572,
+            "output_tokens": 986,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.443,
-        "total_input_tokens": 1330,
-        "total_output_tokens": 1515
+        "mean_score": 0.823,
+        "total_input_tokens": 1120,
+        "total_output_tokens": 1851
+      },
+      "claude-haiku-4-5-20251001": {
+        "prompts": [
+          {
+            "prompt_id": "us_zip",
+            "length": "short",
+            "score": 0.79,
+            "input_tokens": 213,
+            "output_tokens": 373,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "iso_date",
+            "length": "medium",
+            "score": 0.78,
+            "input_tokens": 424,
+            "output_tokens": 478,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "semver",
+            "length": "long",
+            "score": 0.74,
+            "input_tokens": 615,
+            "output_tokens": 841,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.77,
+        "total_input_tokens": 1252,
+        "total_output_tokens": 1692
+      },
+      "llama-3.3-70b-versatile": {
+        "prompts": [
+          {
+            "prompt_id": "us_zip",
+            "length": "short",
+            "score": 1.0,
+            "input_tokens": 228,
+            "output_tokens": 278,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "iso_date",
+            "length": "medium",
+            "score": 1.0,
+            "input_tokens": 476,
+            "output_tokens": 461,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "semver",
+            "length": "long",
+            "score": 0.72,
+            "input_tokens": 667,
+            "output_tokens": 1065,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.907,
+        "total_input_tokens": 1371,
+        "total_output_tokens": 1804
+      },
+      "deepseek-r1-distill-llama-70b": {
+        "prompts": [
+          {
+            "prompt_id": "us_zip",
+            "length": "short",
+            "score": 1.0,
+            "input_tokens": 212,
+            "output_tokens": 229,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "iso_date",
+            "length": "medium",
+            "score": 0.87,
+            "input_tokens": 423,
+            "output_tokens": 420,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "semver",
+            "length": "long",
+            "score": 0.8,
+            "input_tokens": 544,
+            "output_tokens": 792,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.89,
+        "total_input_tokens": 1179,
+        "total_output_tokens": 1441
+      },
+      "llama-3.1-8b-instant": {
+        "prompts": [
+          {
+            "prompt_id": "us_zip",
+            "length": "short",
+            "score": 1.0,
+            "input_tokens": 228,
+            "output_tokens": 316,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "iso_date",
+            "length": "medium",
+            "score": 0.48,
+            "input_tokens": 418,
+            "output_tokens": 459,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "semver",
+            "length": "long",
+            "score": 0.66,
+            "input_tokens": 659,
+            "output_tokens": 850,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.713,
+        "total_input_tokens": 1305,
+        "total_output_tokens": 1625
       }
     },
     "json_extract": {
@@ -1148,204 +1148,204 @@
           {
             "prompt_id": "contact_card",
             "length": "short",
-            "score": 0.97,
-            "input_tokens": 238,
-            "output_tokens": 355,
+            "score": 0.92,
+            "input_tokens": 224,
+            "output_tokens": 290,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "invoice",
             "length": "medium",
-            "score": 0.9,
-            "input_tokens": 360,
-            "output_tokens": 449,
+            "score": 0.82,
+            "input_tokens": 320,
+            "output_tokens": 603,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "meeting_minutes",
             "length": "long",
-            "score": 0.9,
-            "input_tokens": 615,
-            "output_tokens": 775,
+            "score": 0.76,
+            "input_tokens": 559,
+            "output_tokens": 1182,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.923,
-        "total_input_tokens": 1213,
-        "total_output_tokens": 1579
+        "mean_score": 0.833,
+        "total_input_tokens": 1103,
+        "total_output_tokens": 2075
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "contact_card",
             "length": "short",
-            "score": 0.79,
+            "score": 0.73,
             "input_tokens": 218,
-            "output_tokens": 237,
+            "output_tokens": 326,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "invoice",
             "length": "medium",
-            "score": 0.76,
-            "input_tokens": 350,
-            "output_tokens": 546,
+            "score": 0.98,
+            "input_tokens": 378,
+            "output_tokens": 625,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "meeting_minutes",
             "length": "long",
-            "score": 0.72,
-            "input_tokens": 540,
-            "output_tokens": 1057,
+            "score": 0.68,
+            "input_tokens": 561,
+            "output_tokens": 906,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.757,
-        "total_input_tokens": 1108,
-        "total_output_tokens": 1840
+        "mean_score": 0.797,
+        "total_input_tokens": 1157,
+        "total_output_tokens": 1857
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "contact_card",
             "length": "short",
-            "score": 0.89,
-            "input_tokens": 216,
-            "output_tokens": 353,
+            "score": 0.71,
+            "input_tokens": 193,
+            "output_tokens": 274,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "invoice",
             "length": "medium",
-            "score": 0.79,
-            "input_tokens": 400,
-            "output_tokens": 553,
+            "score": 0.72,
+            "input_tokens": 449,
+            "output_tokens": 454,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "meeting_minutes",
             "length": "long",
-            "score": 0.74,
-            "input_tokens": 642,
-            "output_tokens": 875,
+            "score": 0.79,
+            "input_tokens": 554,
+            "output_tokens": 751,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.807,
-        "total_input_tokens": 1258,
-        "total_output_tokens": 1781
+        "mean_score": 0.74,
+        "total_input_tokens": 1196,
+        "total_output_tokens": 1479
       },
       "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "contact_card",
             "length": "short",
-            "score": 0.95,
-            "input_tokens": 205,
-            "output_tokens": 253,
+            "score": 0.68,
+            "input_tokens": 209,
+            "output_tokens": 314,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "invoice",
             "length": "medium",
-            "score": 0.68,
-            "input_tokens": 400,
-            "output_tokens": 457,
+            "score": 0.74,
+            "input_tokens": 467,
+            "output_tokens": 584,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "meeting_minutes",
             "length": "long",
-            "score": 0.64,
-            "input_tokens": 524,
-            "output_tokens": 974,
+            "score": 0.62,
+            "input_tokens": 654,
+            "output_tokens": 830,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.757,
-        "total_input_tokens": 1129,
-        "total_output_tokens": 1684
+        "mean_score": 0.68,
+        "total_input_tokens": 1330,
+        "total_output_tokens": 1728
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "contact_card",
             "length": "short",
-            "score": 0.61,
-            "input_tokens": 186,
-            "output_tokens": 238,
+            "score": 0.79,
+            "input_tokens": 220,
+            "output_tokens": 379,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "invoice",
             "length": "medium",
-            "score": 0.62,
-            "input_tokens": 457,
-            "output_tokens": 529,
+            "score": 0.52,
+            "input_tokens": 413,
+            "output_tokens": 668,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "meeting_minutes",
             "length": "long",
-            "score": 0.67,
-            "input_tokens": 698,
-            "output_tokens": 1191,
+            "score": 0.44,
+            "input_tokens": 665,
+            "output_tokens": 752,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.633,
-        "total_input_tokens": 1341,
-        "total_output_tokens": 1958
+        "mean_score": 0.583,
+        "total_input_tokens": 1298,
+        "total_output_tokens": 1799
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "contact_card",
             "length": "short",
-            "score": 0.52,
-            "input_tokens": 184,
-            "output_tokens": 282,
+            "score": 0.37,
+            "input_tokens": 206,
+            "output_tokens": 358,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "invoice",
             "length": "medium",
-            "score": 0.44,
-            "input_tokens": 459,
-            "output_tokens": 574,
+            "score": 0.17,
+            "input_tokens": 449,
+            "output_tokens": 549,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "meeting_minutes",
             "length": "long",
-            "score": 0.61,
-            "input_tokens": 524,
-            "output_tokens": 1081,
+            "score": 0.24,
+            "input_tokens": 539,
+            "output_tokens": 848,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.523,
-        "total_input_tokens": 1167,
-        "total_output_tokens": 1937
+        "mean_score": 0.26,
+        "total_input_tokens": 1194,
+        "total_output_tokens": 1755
       }
     },
     "math": {
@@ -1354,52 +1354,154 @@
           {
             "prompt_id": "bookstore",
             "length": "short",
-            "score": 0.89,
-            "input_tokens": 222,
-            "output_tokens": 246,
+            "score": 0.76,
+            "input_tokens": 200,
+            "output_tokens": 251,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "train_meet",
             "length": "medium",
-            "score": 0.78,
-            "input_tokens": 354,
-            "output_tokens": 555,
+            "score": 0.84,
+            "input_tokens": 363,
+            "output_tokens": 572,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "compound_with_deposits",
             "length": "long",
-            "score": 0.9,
-            "input_tokens": 599,
-            "output_tokens": 879,
+            "score": 0.68,
+            "input_tokens": 652,
+            "output_tokens": 900,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.857,
-        "total_input_tokens": 1175,
-        "total_output_tokens": 1680
+        "mean_score": 0.76,
+        "total_input_tokens": 1215,
+        "total_output_tokens": 1723
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "bookstore",
             "length": "short",
-            "score": 0.84,
-            "input_tokens": 198,
-            "output_tokens": 374,
+            "score": 0.87,
+            "input_tokens": 186,
+            "output_tokens": 259,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "train_meet",
             "length": "medium",
-            "score": 0.83,
-            "input_tokens": 387,
-            "output_tokens": 678,
+            "score": 0.93,
+            "input_tokens": 432,
+            "output_tokens": 636,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "compound_with_deposits",
+            "length": "long",
+            "score": 0.66,
+            "input_tokens": 665,
+            "output_tokens": 1143,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.82,
+        "total_input_tokens": 1283,
+        "total_output_tokens": 2038
+      },
+      "claude-haiku-4-5-20251001": {
+        "prompts": [
+          {
+            "prompt_id": "bookstore",
+            "length": "short",
+            "score": 0.88,
+            "input_tokens": 188,
+            "output_tokens": 297,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "train_meet",
+            "length": "medium",
+            "score": 0.84,
+            "input_tokens": 391,
+            "output_tokens": 599,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "compound_with_deposits",
+            "length": "long",
+            "score": 0.59,
+            "input_tokens": 724,
+            "output_tokens": 897,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.77,
+        "total_input_tokens": 1303,
+        "total_output_tokens": 1793
+      },
+      "llama-3.3-70b-versatile": {
+        "prompts": [
+          {
+            "prompt_id": "bookstore",
+            "length": "short",
+            "score": 0.72,
+            "input_tokens": 228,
+            "output_tokens": 232,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "train_meet",
+            "length": "medium",
+            "score": 0.75,
+            "input_tokens": 478,
+            "output_tokens": 676,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "compound_with_deposits",
+            "length": "long",
+            "score": 0.88,
+            "input_tokens": 753,
+            "output_tokens": 932,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          }
+        ],
+        "mean_score": 0.783,
+        "total_input_tokens": 1459,
+        "total_output_tokens": 1840
+      },
+      "deepseek-r1-distill-llama-70b": {
+        "prompts": [
+          {
+            "prompt_id": "bookstore",
+            "length": "short",
+            "score": 0.93,
+            "input_tokens": 215,
+            "output_tokens": 375,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": ""
+          },
+          {
+            "prompt_id": "train_meet",
+            "length": "medium",
+            "score": 1.0,
+            "input_tokens": 383,
+            "output_tokens": 505,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
@@ -1407,151 +1509,49 @@
             "prompt_id": "compound_with_deposits",
             "length": "long",
             "score": 0.91,
-            "input_tokens": 770,
-            "output_tokens": 868,
+            "input_tokens": 589,
+            "output_tokens": 850,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.86,
-        "total_input_tokens": 1355,
-        "total_output_tokens": 1920
-      },
-      "claude-haiku-4-5-20251001": {
-        "prompts": [
-          {
-            "prompt_id": "bookstore",
-            "length": "short",
-            "score": 0.95,
-            "input_tokens": 185,
-            "output_tokens": 328,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "train_meet",
-            "length": "medium",
-            "score": 0.46,
-            "input_tokens": 390,
-            "output_tokens": 442,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "compound_with_deposits",
-            "length": "long",
-            "score": 0.97,
-            "input_tokens": 654,
-            "output_tokens": 822,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.793,
-        "total_input_tokens": 1229,
-        "total_output_tokens": 1592
-      },
-      "llama-3.3-70b-versatile": {
-        "prompts": [
-          {
-            "prompt_id": "bookstore",
-            "length": "short",
-            "score": 0.75,
-            "input_tokens": 227,
-            "output_tokens": 333,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "train_meet",
-            "length": "medium",
-            "score": 0.6,
-            "input_tokens": 322,
-            "output_tokens": 477,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "compound_with_deposits",
-            "length": "long",
-            "score": 0.69,
-            "input_tokens": 558,
-            "output_tokens": 1192,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.68,
-        "total_input_tokens": 1107,
-        "total_output_tokens": 2002
-      },
-      "deepseek-r1-distill-llama-70b": {
-        "prompts": [
-          {
-            "prompt_id": "bookstore",
-            "length": "short",
-            "score": 0.81,
-            "input_tokens": 182,
-            "output_tokens": 314,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "train_meet",
-            "length": "medium",
-            "score": 0.76,
-            "input_tokens": 469,
-            "output_tokens": 495,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          },
-          {
-            "prompt_id": "compound_with_deposits",
-            "length": "long",
-            "score": 0.8,
-            "input_tokens": 706,
-            "output_tokens": 1200,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": ""
-          }
-        ],
-        "mean_score": 0.79,
-        "total_input_tokens": 1357,
-        "total_output_tokens": 2009
+        "mean_score": 0.947,
+        "total_input_tokens": 1187,
+        "total_output_tokens": 1730
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "bookstore",
             "length": "short",
-            "score": 0.54,
-            "input_tokens": 239,
-            "output_tokens": 230,
+            "score": 0.7,
+            "input_tokens": 216,
+            "output_tokens": 255,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "train_meet",
             "length": "medium",
-            "score": 0.63,
-            "input_tokens": 383,
-            "output_tokens": 472,
+            "score": 0.62,
+            "input_tokens": 424,
+            "output_tokens": 502,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "compound_with_deposits",
             "length": "long",
-            "score": 0.44,
-            "input_tokens": 701,
-            "output_tokens": 1139,
+            "score": 0.51,
+            "input_tokens": 667,
+            "output_tokens": 861,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.537,
-        "total_input_tokens": 1323,
-        "total_output_tokens": 1841
+        "mean_score": 0.61,
+        "total_input_tokens": 1307,
+        "total_output_tokens": 1618
       }
     },
     "science": {
@@ -1560,18 +1560,18 @@
           {
             "prompt_id": "seasons",
             "length": "short",
-            "score": 0.67,
-            "input_tokens": 219,
-            "output_tokens": 259,
+            "score": 0.82,
+            "input_tokens": 223,
+            "output_tokens": 286,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "enzyme_temperature",
             "length": "medium",
-            "score": 0.79,
+            "score": 0.72,
             "input_tokens": 380,
-            "output_tokens": 503,
+            "output_tokens": 631,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
@@ -1579,185 +1579,185 @@
             "prompt_id": "entropy_paradox",
             "length": "long",
             "score": 1.0,
-            "input_tokens": 731,
-            "output_tokens": 752,
+            "input_tokens": 758,
+            "output_tokens": 994,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.82,
-        "total_input_tokens": 1330,
-        "total_output_tokens": 1514
+        "mean_score": 0.847,
+        "total_input_tokens": 1361,
+        "total_output_tokens": 1911
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "seasons",
             "length": "short",
-            "score": 0.77,
-            "input_tokens": 191,
-            "output_tokens": 305,
+            "score": 0.69,
+            "input_tokens": 195,
+            "output_tokens": 238,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "enzyme_temperature",
             "length": "medium",
-            "score": 0.82,
-            "input_tokens": 383,
-            "output_tokens": 556,
+            "score": 0.89,
+            "input_tokens": 463,
+            "output_tokens": 553,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "entropy_paradox",
             "length": "long",
-            "score": 0.68,
-            "input_tokens": 601,
-            "output_tokens": 1143,
+            "score": 0.74,
+            "input_tokens": 653,
+            "output_tokens": 1109,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.757,
-        "total_input_tokens": 1175,
-        "total_output_tokens": 2004
+        "mean_score": 0.773,
+        "total_input_tokens": 1311,
+        "total_output_tokens": 1900
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "seasons",
             "length": "short",
-            "score": 0.46,
-            "input_tokens": 182,
-            "output_tokens": 340,
+            "score": 0.75,
+            "input_tokens": 200,
+            "output_tokens": 258,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "enzyme_temperature",
             "length": "medium",
-            "score": 0.34,
-            "input_tokens": 376,
-            "output_tokens": 522,
+            "score": 0.25,
+            "input_tokens": 409,
+            "output_tokens": 597,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "entropy_paradox",
             "length": "long",
-            "score": 0.59,
-            "input_tokens": 676,
-            "output_tokens": 1160,
+            "score": 0.55,
+            "input_tokens": 717,
+            "output_tokens": 823,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.463,
-        "total_input_tokens": 1234,
-        "total_output_tokens": 2022
+        "mean_score": 0.517,
+        "total_input_tokens": 1326,
+        "total_output_tokens": 1678
       },
       "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "seasons",
             "length": "short",
-            "score": 0.6,
-            "input_tokens": 230,
-            "output_tokens": 278,
+            "score": 0.71,
+            "input_tokens": 213,
+            "output_tokens": 303,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "enzyme_temperature",
             "length": "medium",
-            "score": 0.77,
-            "input_tokens": 422,
-            "output_tokens": 588,
+            "score": 0.86,
+            "input_tokens": 326,
+            "output_tokens": 629,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "entropy_paradox",
             "length": "long",
-            "score": 0.94,
-            "input_tokens": 662,
-            "output_tokens": 1182,
+            "score": 0.66,
+            "input_tokens": 671,
+            "output_tokens": 1068,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.77,
-        "total_input_tokens": 1314,
-        "total_output_tokens": 2048
+        "mean_score": 0.743,
+        "total_input_tokens": 1210,
+        "total_output_tokens": 2000
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "seasons",
             "length": "short",
-            "score": 1.0,
-            "input_tokens": 202,
-            "output_tokens": 350,
+            "score": 0.83,
+            "input_tokens": 195,
+            "output_tokens": 299,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "enzyme_temperature",
             "length": "medium",
-            "score": 0.88,
-            "input_tokens": 422,
-            "output_tokens": 589,
+            "score": 0.87,
+            "input_tokens": 457,
+            "output_tokens": 436,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "entropy_paradox",
             "length": "long",
-            "score": 0.83,
-            "input_tokens": 653,
-            "output_tokens": 831,
+            "score": 0.65,
+            "input_tokens": 704,
+            "output_tokens": 1005,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.903,
-        "total_input_tokens": 1277,
-        "total_output_tokens": 1770
+        "mean_score": 0.783,
+        "total_input_tokens": 1356,
+        "total_output_tokens": 1740
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "seasons",
             "length": "short",
-            "score": 0.33,
-            "input_tokens": 217,
-            "output_tokens": 287,
+            "score": 0.13,
+            "input_tokens": 206,
+            "output_tokens": 364,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "enzyme_temperature",
             "length": "medium",
-            "score": 0.63,
-            "input_tokens": 408,
-            "output_tokens": 580,
+            "score": 0.46,
+            "input_tokens": 320,
+            "output_tokens": 529,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "entropy_paradox",
             "length": "long",
-            "score": 0.43,
-            "input_tokens": 743,
-            "output_tokens": 1050,
+            "score": 0.2,
+            "input_tokens": 594,
+            "output_tokens": 936,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.463,
-        "total_input_tokens": 1368,
-        "total_output_tokens": 1917
+        "mean_score": 0.263,
+        "total_input_tokens": 1120,
+        "total_output_tokens": 1829
       }
     },
     "summarize": {
@@ -1766,86 +1766,188 @@
           {
             "prompt_id": "news_short",
             "length": "short",
-            "score": 0.91,
-            "input_tokens": 237,
-            "output_tokens": 367,
+            "score": 0.93,
+            "input_tokens": 233,
+            "output_tokens": 296,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "news_medium",
             "length": "medium",
-            "score": 0.86,
-            "input_tokens": 368,
-            "output_tokens": 550,
+            "score": 0.71,
+            "input_tokens": 472,
+            "output_tokens": 429,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "science_long",
             "length": "long",
-            "score": 0.96,
-            "input_tokens": 620,
-            "output_tokens": 926,
+            "score": 0.86,
+            "input_tokens": 537,
+            "output_tokens": 947,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.91,
-        "total_input_tokens": 1225,
-        "total_output_tokens": 1843
+        "mean_score": 0.833,
+        "total_input_tokens": 1242,
+        "total_output_tokens": 1672
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "news_short",
             "length": "short",
-            "score": 0.84,
-            "input_tokens": 207,
-            "output_tokens": 237,
+            "score": 0.96,
+            "input_tokens": 202,
+            "output_tokens": 293,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "news_medium",
             "length": "medium",
-            "score": 1.0,
-            "input_tokens": 479,
-            "output_tokens": 580,
+            "score": 0.84,
+            "input_tokens": 332,
+            "output_tokens": 650,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "science_long",
             "length": "long",
-            "score": 0.71,
-            "input_tokens": 583,
-            "output_tokens": 1108,
+            "score": 0.79,
+            "input_tokens": 620,
+            "output_tokens": 813,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.85,
-        "total_input_tokens": 1269,
-        "total_output_tokens": 1925
+        "mean_score": 0.863,
+        "total_input_tokens": 1154,
+        "total_output_tokens": 1756
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "news_short",
             "length": "short",
-            "score": 0.68,
-            "input_tokens": 222,
-            "output_tokens": 324,
+            "score": 0.46,
+            "input_tokens": 214,
+            "output_tokens": 322,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "news_medium",
             "length": "medium",
-            "score": 0.38,
-            "input_tokens": 403,
-            "output_tokens": 626,
+            "score": 0.45,
+            "input_tokens": 375,
+            "output_tokens": 484,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "science_long",
+            "length": "long",
+            "score": 0.85,
+            "input_tokens": 585,
+            "output_tokens": 817,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.587,
+        "total_input_tokens": 1174,
+        "total_output_tokens": 1623
+      },
+      "llama-3.3-70b-versatile": {
+        "prompts": [
+          {
+            "prompt_id": "news_short",
+            "length": "short",
+            "score": 0.53,
+            "input_tokens": 199,
+            "output_tokens": 340,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "news_medium",
+            "length": "medium",
+            "score": 0.73,
+            "input_tokens": 345,
+            "output_tokens": 554,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "science_long",
+            "length": "long",
+            "score": 0.84,
+            "input_tokens": 558,
+            "output_tokens": 914,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.7,
+        "total_input_tokens": 1102,
+        "total_output_tokens": 1808
+      },
+      "deepseek-r1-distill-llama-70b": {
+        "prompts": [
+          {
+            "prompt_id": "news_short",
+            "length": "short",
+            "score": 0.73,
+            "input_tokens": 204,
+            "output_tokens": 291,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "news_medium",
+            "length": "medium",
+            "score": 0.83,
+            "input_tokens": 366,
+            "output_tokens": 476,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "science_long",
+            "length": "long",
+            "score": 1.0,
+            "input_tokens": 617,
+            "output_tokens": 865,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.853,
+        "total_input_tokens": 1187,
+        "total_output_tokens": 1632
+      },
+      "llama-3.1-8b-instant": {
+        "prompts": [
+          {
+            "prompt_id": "news_short",
+            "length": "short",
+            "score": 0.33,
+            "input_tokens": 205,
+            "output_tokens": 254,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "news_medium",
+            "length": "medium",
+            "score": 0.54,
+            "input_tokens": 400,
+            "output_tokens": 606,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
@@ -1853,117 +1955,15 @@
             "prompt_id": "science_long",
             "length": "long",
             "score": 0.44,
-            "input_tokens": 618,
-            "output_tokens": 955,
+            "input_tokens": 702,
+            "output_tokens": 986,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.5,
-        "total_input_tokens": 1243,
-        "total_output_tokens": 1905
-      },
-      "llama-3.3-70b-versatile": {
-        "prompts": [
-          {
-            "prompt_id": "news_short",
-            "length": "short",
-            "score": 0.57,
-            "input_tokens": 222,
-            "output_tokens": 317,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "news_medium",
-            "length": "medium",
-            "score": 0.61,
-            "input_tokens": 477,
-            "output_tokens": 574,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "science_long",
-            "length": "long",
-            "score": 0.47,
-            "input_tokens": 727,
-            "output_tokens": 1020,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.55,
-        "total_input_tokens": 1426,
-        "total_output_tokens": 1911
-      },
-      "deepseek-r1-distill-llama-70b": {
-        "prompts": [
-          {
-            "prompt_id": "news_short",
-            "length": "short",
-            "score": 0.83,
-            "input_tokens": 193,
-            "output_tokens": 330,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "news_medium",
-            "length": "medium",
-            "score": 0.64,
-            "input_tokens": 468,
-            "output_tokens": 584,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "science_long",
-            "length": "long",
-            "score": 0.59,
-            "input_tokens": 629,
-            "output_tokens": 1001,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.687,
-        "total_input_tokens": 1290,
-        "total_output_tokens": 1915
-      },
-      "llama-3.1-8b-instant": {
-        "prompts": [
-          {
-            "prompt_id": "news_short",
-            "length": "short",
-            "score": 0.42,
-            "input_tokens": 210,
-            "output_tokens": 263,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "news_medium",
-            "length": "medium",
-            "score": 0.28,
-            "input_tokens": 478,
-            "output_tokens": 591,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "science_long",
-            "length": "long",
-            "score": 0.23,
-            "input_tokens": 567,
-            "output_tokens": 1159,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.31,
-        "total_input_tokens": 1255,
-        "total_output_tokens": 2013
+        "mean_score": 0.437,
+        "total_input_tokens": 1307,
+        "total_output_tokens": 1846
       }
     },
     "email": {
@@ -1973,153 +1973,85 @@
             "prompt_id": "schedule_conflict",
             "length": "short",
             "score": 0.93,
-            "input_tokens": 199,
-            "output_tokens": 277,
+            "input_tokens": 214,
+            "output_tokens": 282,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "bug_report_followup",
             "length": "medium",
-            "score": 0.84,
-            "input_tokens": 370,
-            "output_tokens": 495,
+            "score": 0.88,
+            "input_tokens": 341,
+            "output_tokens": 653,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "cross_team_proposal",
             "length": "long",
-            "score": 0.93,
-            "input_tokens": 763,
-            "output_tokens": 1052,
+            "score": 0.82,
+            "input_tokens": 705,
+            "output_tokens": 1077,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.9,
-        "total_input_tokens": 1332,
-        "total_output_tokens": 1824
+        "mean_score": 0.877,
+        "total_input_tokens": 1260,
+        "total_output_tokens": 2012
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "schedule_conflict",
             "length": "short",
-            "score": 0.81,
-            "input_tokens": 234,
-            "output_tokens": 238,
+            "score": 0.67,
+            "input_tokens": 228,
+            "output_tokens": 253,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "bug_report_followup",
             "length": "medium",
-            "score": 0.56,
-            "input_tokens": 467,
-            "output_tokens": 519,
+            "score": 0.81,
+            "input_tokens": 399,
+            "output_tokens": 493,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "cross_team_proposal",
             "length": "long",
-            "score": 0.87,
-            "input_tokens": 716,
-            "output_tokens": 993,
+            "score": 0.69,
+            "input_tokens": 750,
+            "output_tokens": 800,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.747,
-        "total_input_tokens": 1417,
-        "total_output_tokens": 1750
+        "mean_score": 0.723,
+        "total_input_tokens": 1377,
+        "total_output_tokens": 1546
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "schedule_conflict",
             "length": "short",
-            "score": 0.58,
-            "input_tokens": 224,
-            "output_tokens": 221,
+            "score": 0.67,
+            "input_tokens": 233,
+            "output_tokens": 268,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "bug_report_followup",
             "length": "medium",
-            "score": 0.72,
-            "input_tokens": 347,
-            "output_tokens": 637,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "cross_team_proposal",
-            "length": "long",
-            "score": 0.72,
-            "input_tokens": 757,
-            "output_tokens": 765,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.673,
-        "total_input_tokens": 1328,
-        "total_output_tokens": 1623
-      },
-      "llama-3.3-70b-versatile": {
-        "prompts": [
-          {
-            "prompt_id": "schedule_conflict",
-            "length": "short",
-            "score": 0.99,
-            "input_tokens": 215,
-            "output_tokens": 283,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "bug_report_followup",
-            "length": "medium",
-            "score": 0.8,
-            "input_tokens": 354,
-            "output_tokens": 657,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "cross_team_proposal",
-            "length": "long",
-            "score": 0.7,
-            "input_tokens": 682,
-            "output_tokens": 1126,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          }
-        ],
-        "mean_score": 0.83,
-        "total_input_tokens": 1251,
-        "total_output_tokens": 2066
-      },
-      "deepseek-r1-distill-llama-70b": {
-        "prompts": [
-          {
-            "prompt_id": "schedule_conflict",
-            "length": "short",
-            "score": 0.93,
-            "input_tokens": 226,
-            "output_tokens": 349,
-            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
-            "judge_reasoning": "Placeholder reasoning."
-          },
-          {
-            "prompt_id": "bug_report_followup",
-            "length": "medium",
-            "score": 0.62,
-            "input_tokens": 429,
-            "output_tokens": 648,
+            "score": 0.64,
+            "input_tokens": 408,
+            "output_tokens": 574,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
@@ -2127,49 +2059,117 @@
             "prompt_id": "cross_team_proposal",
             "length": "long",
             "score": 0.97,
-            "input_tokens": 763,
-            "output_tokens": 970,
+            "input_tokens": 660,
+            "output_tokens": 1121,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.84,
-        "total_input_tokens": 1418,
-        "total_output_tokens": 1967
+        "mean_score": 0.76,
+        "total_input_tokens": 1301,
+        "total_output_tokens": 1963
       },
-      "llama-3.1-8b-instant": {
+      "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "schedule_conflict",
             "length": "short",
-            "score": 0.32,
-            "input_tokens": 196,
-            "output_tokens": 283,
+            "score": 0.87,
+            "input_tokens": 225,
+            "output_tokens": 225,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "bug_report_followup",
             "length": "medium",
-            "score": 0.61,
-            "input_tokens": 453,
-            "output_tokens": 668,
+            "score": 0.67,
+            "input_tokens": 415,
+            "output_tokens": 507,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "cross_team_proposal",
             "length": "long",
-            "score": 0.38,
-            "input_tokens": 642,
-            "output_tokens": 880,
+            "score": 0.93,
+            "input_tokens": 656,
+            "output_tokens": 749,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.437,
-        "total_input_tokens": 1291,
-        "total_output_tokens": 1831
+        "mean_score": 0.823,
+        "total_input_tokens": 1296,
+        "total_output_tokens": 1481
+      },
+      "deepseek-r1-distill-llama-70b": {
+        "prompts": [
+          {
+            "prompt_id": "schedule_conflict",
+            "length": "short",
+            "score": 0.74,
+            "input_tokens": 182,
+            "output_tokens": 353,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "bug_report_followup",
+            "length": "medium",
+            "score": 0.68,
+            "input_tokens": 321,
+            "output_tokens": 564,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "cross_team_proposal",
+            "length": "long",
+            "score": 0.88,
+            "input_tokens": 643,
+            "output_tokens": 889,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.767,
+        "total_input_tokens": 1146,
+        "total_output_tokens": 1806
+      },
+      "llama-3.1-8b-instant": {
+        "prompts": [
+          {
+            "prompt_id": "schedule_conflict",
+            "length": "short",
+            "score": 0.33,
+            "input_tokens": 222,
+            "output_tokens": 245,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "bug_report_followup",
+            "length": "medium",
+            "score": 0.41,
+            "input_tokens": 402,
+            "output_tokens": 527,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          },
+          {
+            "prompt_id": "cross_team_proposal",
+            "length": "long",
+            "score": 0.41,
+            "input_tokens": 552,
+            "output_tokens": 914,
+            "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
+            "judge_reasoning": "Placeholder reasoning."
+          }
+        ],
+        "mean_score": 0.383,
+        "total_input_tokens": 1176,
+        "total_output_tokens": 1686
       }
     },
     "logic": {
@@ -2178,145 +2178,145 @@
           {
             "prompt_id": "three_doors",
             "length": "short",
-            "score": 0.71,
-            "input_tokens": 195,
-            "output_tokens": 289,
+            "score": 0.79,
+            "input_tokens": 233,
+            "output_tokens": 304,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "knights_knaves",
             "length": "medium",
-            "score": 0.92,
-            "input_tokens": 405,
-            "output_tokens": 583,
+            "score": 0.88,
+            "input_tokens": 375,
+            "output_tokens": 534,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "seating_constraints",
             "length": "long",
-            "score": 0.89,
-            "input_tokens": 597,
-            "output_tokens": 858,
+            "score": 1.0,
+            "input_tokens": 551,
+            "output_tokens": 834,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.84,
-        "total_input_tokens": 1197,
-        "total_output_tokens": 1730
+        "mean_score": 0.89,
+        "total_input_tokens": 1159,
+        "total_output_tokens": 1672
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "three_doors",
             "length": "short",
-            "score": 0.77,
-            "input_tokens": 204,
-            "output_tokens": 259,
+            "score": 0.53,
+            "input_tokens": 180,
+            "output_tokens": 309,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "knights_knaves",
             "length": "medium",
-            "score": 0.79,
-            "input_tokens": 424,
-            "output_tokens": 589,
+            "score": 0.91,
+            "input_tokens": 377,
+            "output_tokens": 575,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "seating_constraints",
             "length": "long",
-            "score": 0.76,
-            "input_tokens": 758,
-            "output_tokens": 952,
+            "score": 0.63,
+            "input_tokens": 577,
+            "output_tokens": 1032,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.773,
-        "total_input_tokens": 1386,
-        "total_output_tokens": 1800
+        "mean_score": 0.69,
+        "total_input_tokens": 1134,
+        "total_output_tokens": 1916
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "three_doors",
             "length": "short",
-            "score": 0.82,
-            "input_tokens": 204,
-            "output_tokens": 369,
+            "score": 0.53,
+            "input_tokens": 220,
+            "output_tokens": 309,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "knights_knaves",
             "length": "medium",
-            "score": 0.64,
-            "input_tokens": 325,
-            "output_tokens": 614,
+            "score": 0.1,
+            "input_tokens": 324,
+            "output_tokens": 474,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "seating_constraints",
             "length": "long",
-            "score": 0.08,
-            "input_tokens": 672,
-            "output_tokens": 1125,
+            "score": 0.61,
+            "input_tokens": 667,
+            "output_tokens": 749,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.513,
-        "total_input_tokens": 1201,
-        "total_output_tokens": 2108
+        "mean_score": 0.413,
+        "total_input_tokens": 1211,
+        "total_output_tokens": 1532
       },
       "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "three_doors",
             "length": "short",
-            "score": 0.79,
-            "input_tokens": 204,
-            "output_tokens": 327,
+            "score": 0.81,
+            "input_tokens": 187,
+            "output_tokens": 324,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "knights_knaves",
             "length": "medium",
-            "score": 0.52,
-            "input_tokens": 474,
-            "output_tokens": 532,
+            "score": 0.72,
+            "input_tokens": 408,
+            "output_tokens": 525,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "seating_constraints",
             "length": "long",
-            "score": 0.69,
-            "input_tokens": 769,
-            "output_tokens": 852,
+            "score": 0.71,
+            "input_tokens": 634,
+            "output_tokens": 964,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.667,
-        "total_input_tokens": 1447,
-        "total_output_tokens": 1711
+        "mean_score": 0.747,
+        "total_input_tokens": 1229,
+        "total_output_tokens": 1813
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "three_doors",
             "length": "short",
-            "score": 0.81,
-            "input_tokens": 204,
-            "output_tokens": 306,
+            "score": 0.74,
+            "input_tokens": 180,
+            "output_tokens": 284,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
@@ -2324,58 +2324,58 @@
             "prompt_id": "knights_knaves",
             "length": "medium",
             "score": 1.0,
-            "input_tokens": 423,
-            "output_tokens": 504,
+            "input_tokens": 381,
+            "output_tokens": 669,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "seating_constraints",
             "length": "long",
-            "score": 1.0,
-            "input_tokens": 533,
-            "output_tokens": 941,
+            "score": 0.77,
+            "input_tokens": 576,
+            "output_tokens": 984,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.937,
-        "total_input_tokens": 1160,
-        "total_output_tokens": 1751
+        "mean_score": 0.837,
+        "total_input_tokens": 1137,
+        "total_output_tokens": 1937
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "three_doors",
             "length": "short",
-            "score": 0.0,
-            "input_tokens": 217,
-            "output_tokens": 364,
+            "score": 0.39,
+            "input_tokens": 183,
+            "output_tokens": 239,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "knights_knaves",
             "length": "medium",
-            "score": 0.33,
-            "input_tokens": 429,
-            "output_tokens": 489,
+            "score": 0.38,
+            "input_tokens": 427,
+            "output_tokens": 665,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           },
           {
             "prompt_id": "seating_constraints",
             "length": "long",
-            "score": 0.3,
-            "input_tokens": 756,
-            "output_tokens": 833,
+            "score": 0.19,
+            "input_tokens": 659,
+            "output_tokens": 893,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": ""
           }
         ],
-        "mean_score": 0.21,
-        "total_input_tokens": 1402,
-        "total_output_tokens": 1686
+        "mean_score": 0.32,
+        "total_input_tokens": 1269,
+        "total_output_tokens": 1797
       }
     },
     "edge_cases": {
@@ -2384,204 +2384,204 @@
           {
             "prompt_id": "unanswerable_factual",
             "length": "short",
-            "score": 0.95,
-            "input_tokens": 193,
-            "output_tokens": 336,
+            "score": 0.82,
+            "input_tokens": 208,
+            "output_tokens": 287,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "contradictory_premise",
             "length": "medium",
-            "score": 0.89,
-            "input_tokens": 403,
-            "output_tokens": 592,
+            "score": 0.91,
+            "input_tokens": 381,
+            "output_tokens": 545,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "trick_request",
             "length": "long",
-            "score": 0.87,
-            "input_tokens": 735,
-            "output_tokens": 869,
+            "score": 0.77,
+            "input_tokens": 603,
+            "output_tokens": 920,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.903,
-        "total_input_tokens": 1331,
-        "total_output_tokens": 1797
+        "mean_score": 0.833,
+        "total_input_tokens": 1192,
+        "total_output_tokens": 1752
       },
       "claude-sonnet-4-6": {
         "prompts": [
           {
             "prompt_id": "unanswerable_factual",
             "length": "short",
-            "score": 0.68,
-            "input_tokens": 233,
-            "output_tokens": 240,
+            "score": 0.92,
+            "input_tokens": 210,
+            "output_tokens": 353,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "contradictory_premise",
             "length": "medium",
-            "score": 0.6,
-            "input_tokens": 333,
-            "output_tokens": 599,
+            "score": 0.8,
+            "input_tokens": 322,
+            "output_tokens": 446,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "trick_request",
             "length": "long",
-            "score": 0.84,
-            "input_tokens": 634,
-            "output_tokens": 1072,
+            "score": 0.82,
+            "input_tokens": 529,
+            "output_tokens": 847,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.707,
-        "total_input_tokens": 1200,
-        "total_output_tokens": 1911
+        "mean_score": 0.847,
+        "total_input_tokens": 1061,
+        "total_output_tokens": 1646
       },
       "claude-haiku-4-5-20251001": {
         "prompts": [
           {
             "prompt_id": "unanswerable_factual",
             "length": "short",
-            "score": 0.92,
-            "input_tokens": 182,
-            "output_tokens": 227,
+            "score": 0.67,
+            "input_tokens": 228,
+            "output_tokens": 267,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "contradictory_premise",
             "length": "medium",
-            "score": 0.7,
-            "input_tokens": 383,
-            "output_tokens": 522,
+            "score": 0.74,
+            "input_tokens": 445,
+            "output_tokens": 510,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "trick_request",
             "length": "long",
-            "score": 0.64,
-            "input_tokens": 642,
-            "output_tokens": 804,
+            "score": 0.49,
+            "input_tokens": 760,
+            "output_tokens": 850,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.753,
-        "total_input_tokens": 1207,
-        "total_output_tokens": 1553
+        "mean_score": 0.633,
+        "total_input_tokens": 1433,
+        "total_output_tokens": 1627
       },
       "llama-3.3-70b-versatile": {
         "prompts": [
           {
             "prompt_id": "unanswerable_factual",
             "length": "short",
-            "score": 0.57,
-            "input_tokens": 210,
-            "output_tokens": 249,
+            "score": 0.85,
+            "input_tokens": 215,
+            "output_tokens": 349,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "contradictory_premise",
             "length": "medium",
-            "score": 0.65,
-            "input_tokens": 385,
-            "output_tokens": 608,
+            "score": 0.61,
+            "input_tokens": 376,
+            "output_tokens": 628,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "trick_request",
             "length": "long",
-            "score": 0.7,
-            "input_tokens": 605,
-            "output_tokens": 1050,
+            "score": 0.81,
+            "input_tokens": 578,
+            "output_tokens": 823,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.64,
-        "total_input_tokens": 1200,
-        "total_output_tokens": 1907
+        "mean_score": 0.757,
+        "total_input_tokens": 1169,
+        "total_output_tokens": 1800
       },
       "deepseek-r1-distill-llama-70b": {
         "prompts": [
           {
             "prompt_id": "unanswerable_factual",
             "length": "short",
-            "score": 0.55,
-            "input_tokens": 187,
-            "output_tokens": 261,
+            "score": 0.83,
+            "input_tokens": 228,
+            "output_tokens": 281,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "contradictory_premise",
             "length": "medium",
-            "score": 0.59,
-            "input_tokens": 399,
-            "output_tokens": 475,
+            "score": 0.44,
+            "input_tokens": 322,
+            "output_tokens": 513,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "trick_request",
             "length": "long",
-            "score": 0.44,
-            "input_tokens": 712,
-            "output_tokens": 943,
+            "score": 0.76,
+            "input_tokens": 618,
+            "output_tokens": 899,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.527,
-        "total_input_tokens": 1298,
-        "total_output_tokens": 1679
+        "mean_score": 0.677,
+        "total_input_tokens": 1168,
+        "total_output_tokens": 1693
       },
       "llama-3.1-8b-instant": {
         "prompts": [
           {
             "prompt_id": "unanswerable_factual",
             "length": "short",
-            "score": 0.15,
-            "input_tokens": 240,
-            "output_tokens": 270,
+            "score": 0.1,
+            "input_tokens": 199,
+            "output_tokens": 236,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "contradictory_premise",
             "length": "medium",
-            "score": 0.64,
-            "input_tokens": 480,
-            "output_tokens": 544,
+            "score": 0.53,
+            "input_tokens": 446,
+            "output_tokens": 468,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           },
           {
             "prompt_id": "trick_request",
             "length": "long",
-            "score": 0.51,
-            "input_tokens": 572,
-            "output_tokens": 1096,
+            "score": 0.15,
+            "input_tokens": 579,
+            "output_tokens": 1168,
             "response": "(placeholder response \u2014 run `python -m bench` to populate.)",
             "judge_reasoning": "Placeholder reasoning."
           }
         ],
-        "mean_score": 0.433,
-        "total_input_tokens": 1292,
-        "total_output_tokens": 1910
+        "mean_score": 0.26,
+        "total_input_tokens": 1224,
+        "total_output_tokens": 1872
       }
     }
   }

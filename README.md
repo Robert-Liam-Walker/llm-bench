@@ -6,7 +6,7 @@ Reproducible benchmark of Claude model tiers across 12 task categories — code 
 
 ## What it answers
 
-When does Claude Opus pay off versus Sonnet or Haiku (10× cheaper)? When can a free open-weight model (Llama 3.3 70B, DeepSeek R1) hold its own against the frontier? The dashboard shows per-task accuracy and per-task cost, so you can see where the cheap or free model is good enough and where it isn't.
+When does Claude Opus pay off versus Sonnet or Haiku (10× cheaper)? When can a free open-weight model (Llama 3.3 70B, DeepSeek R1) hold its own against the frontier? **And does a hosted model silently get worse after its provider releases a newer tier?** The dashboard runs the full suite on the 1st of every month and surfaces score changes in a drift panel + per-task trend charts, so any persistent dip is immediately visible.
 
 ## Methodology
 

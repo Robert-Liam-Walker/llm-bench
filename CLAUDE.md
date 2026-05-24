@@ -4,7 +4,7 @@ Empirical benchmark of Claude model tiers (Opus 4.7, Sonnet 4.6, Haiku 4.5) acro
 
 ## What this is (and isn't)
 
-- **Is:** a reproducible eval harness + a static dashboard showing how 6 LLMs (3 Claude tiers + 3 Groq-hosted open-weight models) perform on each task type, with per-task scoring methodology you can drill into.
+- **Is:** a reproducible eval harness + a static dashboard showing how 6 LLMs (3 Claude tiers + 3 Groq-hosted open-weight models) perform on each task type. Runs monthly so you can see drift over time — does a hosted model silently get worse after the provider releases a newer tier? The drift panel + per-task trend charts make any persistent dip immediately visible.
 - **Isn't:** a chatbot, a wrapper, or "AI that does X." The LLM is the *subject* of measurement, not the engine.
 
 The point: when does Opus pay off vs Haiku (10× cheaper)? When does a free open-weight model close the gap? Nobody publishes good per-task answers; this does.
@@ -68,7 +68,7 @@ Half the categories are deterministic (no judge), which makes the leaderboard cr
 - **EC2:** `i-007bf70075b46a095`, t3.micro, us-east-1, account `056195341948`. Name tag `llm-bench`, SG `llm-bench-sg` (22 + 80), key pair `llm-bench-key`.
 - **SSH:** `ssh -i ~/.ssh/llm-bench-key.pem ubuntu@44.195.85.130`
 - **Web:** nginx serves `/home/ubuntu/llm-bench/dashboard/` at port 80; `results/latest.json` is reachable at `/results/latest.json`. `/home/ubuntu` was chmod'd `o+x` to make traversal work for nginx (default 700 blocks www-data).
-- **Schedule:** systemd timer `llm-bench-eval.timer` runs the suite every Sunday at 10:00 UTC. Service unit `llm-bench-eval.service` execs `.venv/bin/python -m bench`.
+- **Schedule:** systemd timer `llm-bench-eval.timer` runs the suite on the **1st of every month at 10:00 UTC** (`OnCalendar=*-*-01 10:00:00`). Monthly cadence is deliberate: the drift-tracking story (do hosted models silently degrade after new tier launches?) needs comparable snapshots, not noisy daily ones. Service unit `llm-bench-eval.service` execs `.venv/bin/python -m bench`.
 - **Secrets:** `/etc/llm-bench.env` (mode 600, root-owned) holds `ANTHROPIC_API_KEY=…` and `GROQ_API_KEY=…`. systemd unit pulls both via `EnvironmentFile`. Either can be missing — runner skips that provider's models with a log line, rest of suite still runs.
 
 ### Run a real eval immediately

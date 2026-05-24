@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>llm-bench — Claude tier comparison across 12 tasks</title>
+  <title>llm-bench — Claude vs open-weight, tracked monthly</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,21 +13,47 @@
       Per-task accuracy and cost across three Claude tiers (Opus&nbsp;4.7, Sonnet&nbsp;4.6, Haiku&nbsp;4.5)
       and three open-weight models served by Groq (Llama&nbsp;3.3&nbsp;70B, DeepSeek&nbsp;R1 distill, Llama&nbsp;3.1&nbsp;8B).
       Half the tasks are deterministically scored (unit tests, SQL execution, regex match, exact answer);
-      the rest use a disclosed LLM-as-judge rubric (Opus grades, on a 0–1 scale).
+      the rest use a disclosed LLM-as-judge rubric (Opus grades, 0–1 scale).
+      <strong>Re-run on the 1st of every month</strong> so drift across model updates is visible.
     </p>
     <p class="meta" id="run-meta">Loading…</p>
   </header>
 
   <main>
+    <section class="controls">
+      <label for="run-picker">View run:</label>
+      <select id="run-picker"></select>
+    </section>
+
     <section class="grid-section">
       <table id="grid"></table>
       <p class="caption">
-        Click any cell to inspect the per-prompt scores, the raw model response, and (for judge-scored
+        Click any cell to inspect per-prompt scores, raw response, and (for judge-scored
         tasks) the judge's reasoning.
         Color: <span class="legend low">0.0</span>
         <span class="legend mid">0.5</span>
         <span class="legend high">1.0</span>
       </p>
+    </section>
+
+    <section id="drift-section" class="drift-section">
+      <h2>Δ since previous run</h2>
+      <p class="section-desc">
+        Largest score changes from the previous run. A persistent negative delta on an
+        otherwise-stable model is the smoking gun for actual drift (vs. noise).
+      </p>
+      <div id="drift-table"></div>
+    </section>
+
+    <section id="trends-section" class="trends-section">
+      <h2>Score over time, per task</h2>
+      <p class="section-desc">
+        One small chart per task; lines are models. The thin gray band is the all-models
+        median. If a single model's line dips well below its trend for a sustained stretch,
+        that's evidence worth digging into.
+      </p>
+      <div id="trends-grid"></div>
+      <div id="trend-legend"></div>
     </section>
 
     <section id="drill" class="drill hidden">
@@ -63,7 +89,9 @@
   <footer>
     <p>
       Source: <a href="https://github.com/Robert-Liam-Walker/llm-bench">github.com/Robert-Liam-Walker/llm-bench</a>
-      · <a href="results/latest.json">raw results JSON</a>
+      · <a href="results/latest.json">latest run JSON</a>
+      · <a href="results/index.json">history index JSON</a>
+      · Runs on the 1st of every month at 10:00 UTC
     </p>
   </footer>
 

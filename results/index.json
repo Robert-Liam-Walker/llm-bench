@@ -1,0 +1,449 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "timestamp": "20260201T100000Z",
+      "finished_at": "2026-02-01T10:00:00+00:00",
+      "placeholder": true,
+      "overall_model_means": {
+        "claude-opus-4-7": 0.868,
+        "claude-sonnet-4-6": 0.794,
+        "claude-haiku-4-5-20251001": 0.601,
+        "llama-3.3-70b-versatile": 0.772,
+        "deepseek-r1-distill-llama-70b": 0.793,
+        "llama-3.1-8b-instant": 0.497
+      },
+      "task_model_means": {
+        "code_gen": {
+          "claude-opus-4-7": 0.853,
+          "claude-sonnet-4-6": 0.837,
+          "claude-haiku-4-5-20251001": 0.76,
+          "llama-3.3-70b-versatile": 0.81,
+          "deepseek-r1-distill-llama-70b": 0.857,
+          "llama-3.1-8b-instant": 0.66
+        },
+        "code_debug": {
+          "claude-opus-4-7": 0.91,
+          "claude-sonnet-4-6": 0.737,
+          "claude-haiku-4-5-20251001": 0.607,
+          "llama-3.3-70b-versatile": 0.8,
+          "deepseek-r1-distill-llama-70b": 0.813,
+          "llama-3.1-8b-instant": 0.767
+        },
+        "code_refactor": {
+          "claude-opus-4-7": 0.82,
+          "claude-sonnet-4-6": 0.743,
+          "claude-haiku-4-5-20251001": 0.427,
+          "llama-3.3-70b-versatile": 0.857,
+          "deepseek-r1-distill-llama-70b": 0.887,
+          "llama-3.1-8b-instant": 0.52
+        },
+        "sql": {
+          "claude-opus-4-7": 0.927,
+          "claude-sonnet-4-6": 0.79,
+          "claude-haiku-4-5-20251001": 0.79,
+          "llama-3.3-70b-versatile": 0.697,
+          "deepseek-r1-distill-llama-70b": 0.82,
+          "llama-3.1-8b-instant": 0.403
+        },
+        "regex": {
+          "claude-opus-4-7": 0.863,
+          "claude-sonnet-4-6": 0.737,
+          "claude-haiku-4-5-20251001": 0.6,
+          "llama-3.3-70b-versatile": 0.73,
+          "deepseek-r1-distill-llama-70b": 0.783,
+          "llama-3.1-8b-instant": 0.523
+        },
+        "json_extract": {
+          "claude-opus-4-7": 0.863,
+          "claude-sonnet-4-6": 0.903,
+          "claude-haiku-4-5-20251001": 0.643,
+          "llama-3.3-70b-versatile": 0.663,
+          "deepseek-r1-distill-llama-70b": 0.773,
+          "llama-3.1-8b-instant": 0.74
+        },
+        "math": {
+          "claude-opus-4-7": 0.853,
+          "claude-sonnet-4-6": 0.857,
+          "claude-haiku-4-5-20251001": 0.663,
+          "llama-3.3-70b-versatile": 0.87,
+          "deepseek-r1-distill-llama-70b": 0.813,
+          "llama-3.1-8b-instant": 0.483
+        },
+        "science": {
+          "claude-opus-4-7": 0.847,
+          "claude-sonnet-4-6": 0.727,
+          "claude-haiku-4-5-20251001": 0.673,
+          "llama-3.3-70b-versatile": 0.703,
+          "deepseek-r1-distill-llama-70b": 0.777,
+          "llama-3.1-8b-instant": 0.293
+        },
+        "summarize": {
+          "claude-opus-4-7": 0.877,
+          "claude-sonnet-4-6": 0.76,
+          "claude-haiku-4-5-20251001": 0.56,
+          "llama-3.3-70b-versatile": 0.743,
+          "deepseek-r1-distill-llama-70b": 0.647,
+          "llama-3.1-8b-instant": 0.357
+        },
+        "email": {
+          "claude-opus-4-7": 0.857,
+          "claude-sonnet-4-6": 0.777,
+          "claude-haiku-4-5-20251001": 0.647,
+          "llama-3.3-70b-versatile": 0.9,
+          "deepseek-r1-distill-llama-70b": 0.743,
+          "llama-3.1-8b-instant": 0.5
+        },
+        "logic": {
+          "claude-opus-4-7": 0.817,
+          "claude-sonnet-4-6": 0.84,
+          "claude-haiku-4-5-20251001": 0.553,
+          "llama-3.3-70b-versatile": 0.733,
+          "deepseek-r1-distill-llama-70b": 0.75,
+          "llama-3.1-8b-instant": 0.38
+        },
+        "edge_cases": {
+          "claude-opus-4-7": 0.923,
+          "claude-sonnet-4-6": 0.82,
+          "claude-haiku-4-5-20251001": 0.29,
+          "llama-3.3-70b-versatile": 0.753,
+          "deepseek-r1-distill-llama-70b": 0.85,
+          "llama-3.1-8b-instant": 0.333
+        }
+      }
+    },
+    {
+      "timestamp": "20260301T100000Z",
+      "finished_at": "2026-03-01T10:00:00+00:00",
+      "placeholder": true,
+      "overall_model_means": {
+        "claude-opus-4-7": 0.853,
+        "claude-sonnet-4-6": 0.792,
+        "claude-haiku-4-5-20251001": 0.581,
+        "llama-3.3-70b-versatile": 0.705,
+        "deepseek-r1-distill-llama-70b": 0.766,
+        "llama-3.1-8b-instant": 0.434
+      },
+      "task_model_means": {
+        "code_gen": {
+          "claude-opus-4-7": 0.837,
+          "claude-sonnet-4-6": 0.78,
+          "claude-haiku-4-5-20251001": 0.693,
+          "llama-3.3-70b-versatile": 0.697,
+          "deepseek-r1-distill-llama-70b": 0.78,
+          "llama-3.1-8b-instant": 0.437
+        },
+        "code_debug": {
+          "claude-opus-4-7": 0.797,
+          "claude-sonnet-4-6": 0.847,
+          "claude-haiku-4-5-20251001": 0.6,
+          "llama-3.3-70b-versatile": 0.62,
+          "deepseek-r1-distill-llama-70b": 0.827,
+          "llama-3.1-8b-instant": 0.333
+        },
+        "code_refactor": {
+          "claude-opus-4-7": 0.867,
+          "claude-sonnet-4-6": 0.797,
+          "claude-haiku-4-5-20251001": 0.537,
+          "llama-3.3-70b-versatile": 0.727,
+          "deepseek-r1-distill-llama-70b": 0.76,
+          "llama-3.1-8b-instant": 0.23
+        },
+        "sql": {
+          "claude-opus-4-7": 0.9,
+          "claude-sonnet-4-6": 0.76,
+          "claude-haiku-4-5-20251001": 0.73,
+          "llama-3.3-70b-versatile": 0.853,
+          "deepseek-r1-distill-llama-70b": 0.72,
+          "llama-3.1-8b-instant": 0.457
+        },
+        "regex": {
+          "claude-opus-4-7": 0.85,
+          "claude-sonnet-4-6": 0.793,
+          "claude-haiku-4-5-20251001": 0.723,
+          "llama-3.3-70b-versatile": 0.687,
+          "deepseek-r1-distill-llama-70b": 0.727,
+          "llama-3.1-8b-instant": 0.457
+        },
+        "json_extract": {
+          "claude-opus-4-7": 0.877,
+          "claude-sonnet-4-6": 0.79,
+          "claude-haiku-4-5-20251001": 0.703,
+          "llama-3.3-70b-versatile": 0.59,
+          "deepseek-r1-distill-llama-70b": 0.657,
+          "llama-3.1-8b-instant": 0.783
+        },
+        "math": {
+          "claude-opus-4-7": 0.843,
+          "claude-sonnet-4-6": 0.847,
+          "claude-haiku-4-5-20251001": 0.61,
+          "llama-3.3-70b-versatile": 0.757,
+          "deepseek-r1-distill-llama-70b": 0.847,
+          "llama-3.1-8b-instant": 0.537
+        },
+        "science": {
+          "claude-opus-4-7": 0.803,
+          "claude-sonnet-4-6": 0.827,
+          "claude-haiku-4-5-20251001": 0.423,
+          "llama-3.3-70b-versatile": 0.737,
+          "deepseek-r1-distill-llama-70b": 0.763,
+          "llama-3.1-8b-instant": 0.147
+        },
+        "summarize": {
+          "claude-opus-4-7": 0.837,
+          "claude-sonnet-4-6": 0.78,
+          "claude-haiku-4-5-20251001": 0.51,
+          "llama-3.3-70b-versatile": 0.673,
+          "deepseek-r1-distill-llama-70b": 0.74,
+          "llama-3.1-8b-instant": 0.547
+        },
+        "email": {
+          "claude-opus-4-7": 0.907,
+          "claude-sonnet-4-6": 0.72,
+          "claude-haiku-4-5-20251001": 0.673,
+          "llama-3.3-70b-versatile": 0.647,
+          "deepseek-r1-distill-llama-70b": 0.643,
+          "llama-3.1-8b-instant": 0.523
+        },
+        "logic": {
+          "claude-opus-4-7": 0.89,
+          "claude-sonnet-4-6": 0.793,
+          "claude-haiku-4-5-20251001": 0.367,
+          "llama-3.3-70b-versatile": 0.777,
+          "deepseek-r1-distill-llama-70b": 0.93,
+          "llama-3.1-8b-instant": 0.473
+        },
+        "edge_cases": {
+          "claude-opus-4-7": 0.827,
+          "claude-sonnet-4-6": 0.767,
+          "claude-haiku-4-5-20251001": 0.397,
+          "llama-3.3-70b-versatile": 0.7,
+          "deepseek-r1-distill-llama-70b": 0.793,
+          "llama-3.1-8b-instant": 0.283
+        }
+      }
+    },
+    {
+      "timestamp": "20260401T100000Z",
+      "finished_at": "2026-04-01T10:00:00+00:00",
+      "placeholder": true,
+      "overall_model_means": {
+        "claude-opus-4-7": 0.849,
+        "claude-sonnet-4-6": 0.803,
+        "claude-haiku-4-5-20251001": 0.629,
+        "llama-3.3-70b-versatile": 0.756,
+        "deepseek-r1-distill-llama-70b": 0.784,
+        "llama-3.1-8b-instant": 0.436
+      },
+      "task_model_means": {
+        "code_gen": {
+          "claude-opus-4-7": 0.883,
+          "claude-sonnet-4-6": 0.797,
+          "claude-haiku-4-5-20251001": 0.55,
+          "llama-3.3-70b-versatile": 0.783,
+          "deepseek-r1-distill-llama-70b": 0.733,
+          "llama-3.1-8b-instant": 0.537
+        },
+        "code_debug": {
+          "claude-opus-4-7": 0.867,
+          "claude-sonnet-4-6": 0.813,
+          "claude-haiku-4-5-20251001": 0.627,
+          "llama-3.3-70b-versatile": 0.663,
+          "deepseek-r1-distill-llama-70b": 0.8,
+          "llama-3.1-8b-instant": 0.727
+        },
+        "code_refactor": {
+          "claude-opus-4-7": 0.82,
+          "claude-sonnet-4-6": 0.93,
+          "claude-haiku-4-5-20251001": 0.433,
+          "llama-3.3-70b-versatile": 0.797,
+          "deepseek-r1-distill-llama-70b": 0.733,
+          "llama-3.1-8b-instant": 0.363
+        },
+        "sql": {
+          "claude-opus-4-7": 0.973,
+          "claude-sonnet-4-6": 0.763,
+          "claude-haiku-4-5-20251001": 0.753,
+          "llama-3.3-70b-versatile": 0.693,
+          "deepseek-r1-distill-llama-70b": 0.8,
+          "llama-3.1-8b-instant": 0.363
+        },
+        "regex": {
+          "claude-opus-4-7": 0.767,
+          "claude-sonnet-4-6": 0.823,
+          "claude-haiku-4-5-20251001": 0.77,
+          "llama-3.3-70b-versatile": 0.907,
+          "deepseek-r1-distill-llama-70b": 0.89,
+          "llama-3.1-8b-instant": 0.713
+        },
+        "json_extract": {
+          "claude-opus-4-7": 0.833,
+          "claude-sonnet-4-6": 0.797,
+          "claude-haiku-4-5-20251001": 0.74,
+          "llama-3.3-70b-versatile": 0.68,
+          "deepseek-r1-distill-llama-70b": 0.583,
+          "llama-3.1-8b-instant": 0.26
+        },
+        "math": {
+          "claude-opus-4-7": 0.76,
+          "claude-sonnet-4-6": 0.82,
+          "claude-haiku-4-5-20251001": 0.77,
+          "llama-3.3-70b-versatile": 0.783,
+          "deepseek-r1-distill-llama-70b": 0.947,
+          "llama-3.1-8b-instant": 0.61
+        },
+        "science": {
+          "claude-opus-4-7": 0.847,
+          "claude-sonnet-4-6": 0.773,
+          "claude-haiku-4-5-20251001": 0.517,
+          "llama-3.3-70b-versatile": 0.743,
+          "deepseek-r1-distill-llama-70b": 0.783,
+          "llama-3.1-8b-instant": 0.263
+        },
+        "summarize": {
+          "claude-opus-4-7": 0.833,
+          "claude-sonnet-4-6": 0.863,
+          "claude-haiku-4-5-20251001": 0.587,
+          "llama-3.3-70b-versatile": 0.7,
+          "deepseek-r1-distill-llama-70b": 0.853,
+          "llama-3.1-8b-instant": 0.437
+        },
+        "email": {
+          "claude-opus-4-7": 0.877,
+          "claude-sonnet-4-6": 0.723,
+          "claude-haiku-4-5-20251001": 0.76,
+          "llama-3.3-70b-versatile": 0.823,
+          "deepseek-r1-distill-llama-70b": 0.767,
+          "llama-3.1-8b-instant": 0.383
+        },
+        "logic": {
+          "claude-opus-4-7": 0.89,
+          "claude-sonnet-4-6": 0.69,
+          "claude-haiku-4-5-20251001": 0.413,
+          "llama-3.3-70b-versatile": 0.747,
+          "deepseek-r1-distill-llama-70b": 0.837,
+          "llama-3.1-8b-instant": 0.32
+        },
+        "edge_cases": {
+          "claude-opus-4-7": 0.833,
+          "claude-sonnet-4-6": 0.847,
+          "claude-haiku-4-5-20251001": 0.633,
+          "llama-3.3-70b-versatile": 0.757,
+          "deepseek-r1-distill-llama-70b": 0.677,
+          "llama-3.1-8b-instant": 0.26
+        }
+      }
+    },
+    {
+      "timestamp": "20260501T100000Z",
+      "finished_at": "2026-05-01T10:00:00+00:00",
+      "placeholder": true,
+      "overall_model_means": {
+        "claude-opus-4-7": 0.868,
+        "claude-sonnet-4-6": 0.802,
+        "claude-haiku-4-5-20251001": 0.585,
+        "llama-3.3-70b-versatile": 0.701,
+        "deepseek-r1-distill-llama-70b": 0.788,
+        "llama-3.1-8b-instant": 0.435
+      },
+      "task_model_means": {
+        "code_gen": {
+          "claude-opus-4-7": 0.84,
+          "claude-sonnet-4-6": 0.863,
+          "claude-haiku-4-5-20251001": 0.72,
+          "llama-3.3-70b-versatile": 0.727,
+          "deepseek-r1-distill-llama-70b": 0.627,
+          "llama-3.1-8b-instant": 0.533
+        },
+        "code_debug": {
+          "claude-opus-4-7": 0.87,
+          "claude-sonnet-4-6": 0.667,
+          "claude-haiku-4-5-20251001": 0.723,
+          "llama-3.3-70b-versatile": 0.603,
+          "deepseek-r1-distill-llama-70b": 0.833,
+          "llama-3.1-8b-instant": 0.623
+        },
+        "code_refactor": {
+          "claude-opus-4-7": 0.877,
+          "claude-sonnet-4-6": 0.737,
+          "claude-haiku-4-5-20251001": 0.53,
+          "llama-3.3-70b-versatile": 0.707,
+          "deepseek-r1-distill-llama-70b": 0.833,
+          "llama-3.1-8b-instant": 0.2
+        },
+        "sql": {
+          "claude-opus-4-7": 0.823,
+          "claude-sonnet-4-6": 0.83,
+          "claude-haiku-4-5-20251001": 0.43,
+          "llama-3.3-70b-versatile": 0.73,
+          "deepseek-r1-distill-llama-70b": 0.83,
+          "llama-3.1-8b-instant": 0.63
+        },
+        "regex": {
+          "claude-opus-4-7": 0.91,
+          "claude-sonnet-4-6": 0.883,
+          "claude-haiku-4-5-20251001": 0.757,
+          "llama-3.3-70b-versatile": 0.727,
+          "deepseek-r1-distill-llama-70b": 0.777,
+          "llama-3.1-8b-instant": 0.523
+        },
+        "json_extract": {
+          "claude-opus-4-7": 0.86,
+          "claude-sonnet-4-6": 0.907,
+          "claude-haiku-4-5-20251001": 0.7,
+          "llama-3.3-70b-versatile": 0.74,
+          "deepseek-r1-distill-llama-70b": 0.88,
+          "llama-3.1-8b-instant": 0.327
+        },
+        "math": {
+          "claude-opus-4-7": 0.88,
+          "claude-sonnet-4-6": 0.703,
+          "claude-haiku-4-5-20251001": 0.55,
+          "llama-3.3-70b-versatile": 0.687,
+          "deepseek-r1-distill-llama-70b": 0.807,
+          "llama-3.1-8b-instant": 0.673
+        },
+        "science": {
+          "claude-opus-4-7": 0.967,
+          "claude-sonnet-4-6": 0.837,
+          "claude-haiku-4-5-20251001": 0.44,
+          "llama-3.3-70b-versatile": 0.82,
+          "deepseek-r1-distill-llama-70b": 0.79,
+          "llama-3.1-8b-instant": 0.423
+        },
+        "summarize": {
+          "claude-opus-4-7": 0.873,
+          "claude-sonnet-4-6": 0.817,
+          "claude-haiku-4-5-20251001": 0.43,
+          "llama-3.3-70b-versatile": 0.747,
+          "deepseek-r1-distill-llama-70b": 0.867,
+          "llama-3.1-8b-instant": 0.373
+        },
+        "email": {
+          "claude-opus-4-7": 0.86,
+          "claude-sonnet-4-6": 0.817,
+          "claude-haiku-4-5-20251001": 0.653,
+          "llama-3.3-70b-versatile": 0.617,
+          "deepseek-r1-distill-llama-70b": 0.67,
+          "llama-3.1-8b-instant": 0.253
+        },
+        "logic": {
+          "claude-opus-4-7": 0.87,
+          "claude-sonnet-4-6": 0.743,
+          "claude-haiku-4-5-20251001": 0.507,
+          "llama-3.3-70b-versatile": 0.703,
+          "deepseek-r1-distill-llama-70b": 0.813,
+          "llama-3.1-8b-instant": 0.417
+        },
+        "edge_cases": {
+          "claude-opus-4-7": 0.783,
+          "claude-sonnet-4-6": 0.823,
+          "claude-haiku-4-5-20251001": 0.583,
+          "llama-3.3-70b-versatile": 0.6,
+          "deepseek-r1-distill-llama-70b": 0.727,
+          "llama-3.1-8b-instant": 0.243
+        }
+      }
+    }
+  ]
+}

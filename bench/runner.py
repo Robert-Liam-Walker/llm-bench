@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from . import MODELS
+from .index import update_index
 from .judge import Judge
 from .models import Client, ProviderUnavailable
 from .tasks import ALL_TASKS
@@ -133,7 +134,8 @@ def _write_results(out: dict, out_dir: str):
     if latest.exists() or latest.is_symlink():
         latest.unlink()
     os.symlink(fname.name, latest)
-    _log(f"wrote {fname} and updated latest.json")
+    update_index(path, out)
+    _log(f"wrote {fname}, updated latest.json + index.json")
 
 
 def _log(msg: str):
