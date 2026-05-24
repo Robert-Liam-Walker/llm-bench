@@ -105,7 +105,11 @@ def _run_one(client: Client, judge: Judge, task: Task, prompt, model_spec: dict)
     if task.scorer_kind == "deterministic":
         score = task.score_fn(prompt, completion.text)
     else:
-        score, judge_reasoning = judge.grade(prompt.text, completion.text, task.rubric)
+        try:
+            score, judge_reasoning = judge.grade(prompt.text, completion.text, task.rubric)
+        except ProviderUnavailable as e:
+            score = 0.0
+            judge_reasoning = f"judge unavailable ({e}) — score recorded as 0; rerun with ANTHROPIC_API_KEY set"
     return CellResult(
         score=score,
         response=completion.text,
